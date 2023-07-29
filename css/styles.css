@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+/*Header*/
+
+header {
+    font-family: 'Advent Pro', sans-serif;
+    border-bottom: 2px solid rgba(237, 143, 91, 1);
+}
+
+/* Logo */
+.logo {
+    height: 60px;
+    width: 84px;
+    cursor: pointer;
+}
+
+/* Navbar */
+li,
+a {
+    font-size: 26px;
+    padding-right: 20px;
+}
+
+.styleBtn {
+    border: 1px solid rgba(237, 143, 91, 1);
+    background-color: transparent;
+    color: rgba(237, 143, 91, 1);
+    padding: 4px 12px;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+.styleBtn:hover {
+    background-color: rgba(237, 143, 91, 1);
+    color: white;
+}
+
+/*Main heading section*/
+.mainHeadingCont {
+    margin-top: 5.5rem;
+    margin-bottom: 5.5rem;
+}
+
+.mainHeading {
+    font-family: 'Italiana', serif;
+    font-size: 8rem;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.skin {
+    color: rgba(237, 143, 91, 1);
+}
+
+.imageHeading {
+    height: 120px;
+    width: 210px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+/* Estilos main meading (max-width: 1000px) */
+
+@media (max-width:1000px) {
+    .mainHeading {
+        font-size: 6.5rem;
+    }
+}
+
+/* Estilos main heading (max-width: 730px) */
+@media(max-width:730px) {
+    .mainHeading {
+        font-size: 6rem;
+    }
+    .imageHeading {
+        height: 7rem;
+        width: 12rem;
+        border-radius: 7px;
+        margin-bottom: 30px;
+    }
+}
+/* Estilos main heading (max-width: 674px) */
+@media(max-width:674px) {
+    .mainHeading {
+        font-size: 5.5rem;
+    }
+    .imageHeading {
+        height: 5rem;
+        width: 9rem;
+        border-radius: 7px;
+        margin-bottom: 30px;
+    }
+}
+/* Estilos main heading (max-width: 576px) */
+@media(max-width:576px) {
+    .mainHeading {
+        font-size: 5rem;
+    }
+}
+
+@media(max-width:400px) {
+    .mainHeading {
+        font-size: 3.5rem;
+    }
+}
+
+
+/* Tratments section */
+.treatmentsContainer {
+    padding-bottom: 5rem;
+}
+
+.treatmentsHeadingContaniner {
+    padding-bottom: 5rem;
+}
+
+.treatmentsHeading {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 3rem;
+    border-bottom: 1px solid black;
+    border-color: rgba(237, 143, 91, 1);
+}
+
+.treatments {
+    font-family: 'Italiana', serif;
+    font-size: 5rem;
+
+}
+
+.treatmentTwo {
+    padding-left: 9rem;
+}
+
+.treatmentFour {
+    padding-right: 25rem;
+}
+
+/* Estilos treatments (max-width: 1000px) */
+@media(max-width:1200px) {
+    .treatments {
+        font-size: 3.5rem;
+    }
+
+    .treatmentsHeading {
+        font-size: 3rem;
+    }
+
+    .treatmentFour {
+        padding-right: 18rem;
+    }
+}
+
+/* Estilos treatments (max-width: 992px) */
+@media(max-width:992px) {
+
+    .treatmentsHeading {
+        text-align: center;
+    }
+}
+
+/* Estilos treatments(max-width: 730px) */
+@media(max-width:730px) {
+    
+    .treatmentFour {
+        padding-right: 0;
+    }
+
+    .treatmentTwo {
+        padding-left: 0;
+    }
+}
+
+/* Estilos treatments(max-width: 674px) */
+@media(max-width:674px) {
+    .treatments {
+        font-size: 2.5rem;
+    }
+}
+
+/* Estilos treatments (max-width: 576px) */
+@media(max-width:576px) {
+    .treatments {
+        font-size: 2.5rem;
+    }
+}
+
+/* Estilos treatments(max-width: 400px) */
+@media(max-width:400px) {
+    .treatments {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* Simple steps section */
+
+.stepsHeading {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 3rem;
+    border-bottom: 1px solid black;
+    border-color: rgba(237, 143, 91, 1);
+    margin-bottom: 8rem;
+
+}
+
+.step {
+    font-size: 2rem;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 600;
+    color: rgba(237, 143, 91, 1);
+}
+
+.stepText {
+    font-size: 1.5rem;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+.texContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilos simple steps (max-width: 992px) */
+@media (max-width:992px) {
+    .stepsHeading {
+        margin-bottom: 6rem;
+        text-align: center;
+    }
+    .containerSteps{
+        text-align: center;
+    }
+}
+
+
+
+ /* Make an apointment section */
+.appointmentContainer {
+    background-image: url(../images/make-appointment.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 100%;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appointmentHeading{
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+}
+.textHeading{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.appointmentButton{
+    color: white;
+    background-color: black;
+    font-family:'Advent Pro', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+/* Estilos make an appointment (max-width: 992px) */
+@media (max-width:992px){
+    .appointmentHeading{
+        font-size: 3rem;
+    }
+    .textHeading{
+        font-size: 1.4rem;
+    }
+    
+    .appointmentButton{
+        font-size: 1.3rem;
+    }
+}
+  
+
+/* Blog section */
+
+.blogHeading {
+    font-family: 'Italiana', serif;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+.card-title {
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+a.btn {
+    color: white;
+    font-weight: 400;
+    background-color: rgba(237, 143, 91, 1);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos Blog (max-width: 992px) */
+@media(max-width:992px) {
+    .blogHeading {
+        font-size: 5.4rem;
+    }
+}
+
+/* Estilos Blog (max-width: 768px) */
+@media(max-width:768px) {
+    .blogHeading {
+        font-size: 4rem;
+    }
+
+}
+
+/* Estilos Blog (max-width: 573px) */
+@media(max-width:576px) {
+    .blogHeading {
+        font-size: 3rem;
+    }
+    .cardContainer {
+        padding-top: 3rem;
+    }
+}
+
+
+/* FAQs section */
+
+.FaqsHeading {
+    font-family: 'Italiana', serif;
+    font-size: 6rem;
+    text-align: center;
+
+}
+
+.faqText {
+    font-size: 2.5rem;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+.bi-arrow-right {
+    margin-left: 2rem;
+}
+
+.customLink {
+    color: black
+}
+
+.faqHeadingContainer {
+    padding-top: 5rem;
+}
+
+.customFaqsHr {
+    color: rgba(237, 143, 91, 1);
+    border-width: 0.2rem;
+}
+
+/* Estilos Faqs(max-width: 1200px) */
+@media(max-width:1200px) {
+    .FaqsHeading {
+        font-size: 5rem;
+    }
+
+    .faqText {
+        font-size: 2rem;
+    }
+}
+
+/* Estilos Faqs(max-width: 768px) */
+@media(max-width:768px) {
+    .FaqsHeading {
+        font-size: 4rem;
+    }
+
+    .faqText {
+        font-size: 2rem;
+    }
+}
+
+/* Estilos Faqs(max-width: 576px) */
+@media(max-width:576px) {
+    .FaqsHeading {
+        font-size: 3rem;
+    }
+
+    .faqText {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* About us Section */
+
+.aboutMainHeading h1 {
+    font-family: 'Italiana', serif;
+    font-size: 8rem;
+}
+
+.team {
+    color: rgba(237, 143, 91, 1);
+}
+
+.aboutContent h2 {
+    font-size: 2.5rem;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 600;
+}
+
+.aboutContent p {
+    font-size: 1.58rem;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+.aboutContent hr {
+    border-color: rgba(237, 143, 91, 1);
+    border-width: 0.5rem;
+}
+
+.imgContainer img {
+    width: fit-content;
+}
+
+.imgContainer figcaption {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.imgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos about us (max-width:1200px),
+(max-width: 992px) */
+@media(max-width:1200px),
+(max-width: 992px) {
+
+    .aboutMainHeading h1,
+    .ourTeam {
+        font-size: 6rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutContent h2 {
+        font-size: 2.3rem;
+        font-weight: 600;
+    }
+
+    .aboutContent p {
+        font-size: 1.5rem;
+    }
+
+    .imgContainer figcaption {
+        padding-top: 0.5rem;
+        font-size: 1.4rem;
+    }
+
+}
+
+
+/* Estilos about us(max-width:576px) */
+@media(max-width:576px) {
+    .aboutMainHeading h1 {
+        font-size: 4rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .imgDiv {
+        padding-top: 2rem;
+    }
+
+    .aboutContent h2 {
+        font-size: 1.6rem;
+
+        font-weight: 600;
+    }
+
+    .aboutContent p {
+        font-size: 1.5rem;
+
+    }
+}
+
+/* Contact section */
+.contactHeading {
+    font-size: 6rem;
+    font-family: 'Italiana', serif;
+}
+
+.contactText {
+    font-size: 1.5rem;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+::placeholder {
+    color: black;
+    font-size: 2rem;
+    font-family: 'Advent Pro', sans-serif;
+}
+
+#name:focus::placeholder {
+    color: transparent;
+}
+
+#email:focus::placeholder {
+    color: transparent;
+}
+
+#message:focus::placeholder {
+    color: transparent;
+}
+
+input {
+    padding-top: 1rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0.1rem solid black;
+}
+
+.area {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0.1rem solid black;
+}
+
+.contactBtn {
+    font-family: 'Advent Pro', sans-serif;
+    border-radius: 0.3rem;
+    font-size: 1.3rem;
+    background-color: rgba(237, 143, 91, 1);
+    color: white;
+    border: 1px solid rgba(237, 143, 91, 1);
+    color: white;
+
+}
+
+.btnContainer {
+    padding-top: 5rem;
+}
+
+.contactBtn:hover {
+    background-color: transparent;
+    color: rgba(237, 143, 91, 1);
+}
+
+/* Estilos contact (max-width: 1200px) */
+@media(max-width:1200px) {
+    .contactHeading {
+        font-size: 5rem;
+    }
+
+    .contactText {
+        font-size: 1.5rem;
+    }
+
+    ::placeholder {
+        font-size: 1.5rem;
+    }
+
+    .area {
+        padding-top: 0.5rem;
+        padding-bottom: 0;
+    }
+
+    .btnContainer {
+        padding-top: 3rem;
+    }
+}
+
+
+
+/* Estilos contact (max-width: 992px) */
+@media(max-width: 992px) {
+    .contactHeading {
+        font-size: 4rem;
+    }
+
+    .contactText {
+        font-size: 1.5rem;
+    }
+
+    .area {
+        padding-top: 0.5rem;
+        padding-bottom: 0;
+    }
+
+    .btnContainer {
+        margin-bottom: 7rem;
+    }
+}
+
+/* Estilos Contact (max-width: 768px) */
+@media(max-width:768px) {
+    .contenedorTodo {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* Estilos Contact (max-width: 576px) */
+@media(max-width:576px) {
+    .contactHeading {
+        font-size: 3rem;
+    }
+
+}
+
+
+/* Footer section */
+
+footer {
+    background-color: rgba(255, 208, 182, 0.19);
+    font-family: 'Roboto', sans-serif;
+    margin-top: 8.5rem;
+}
+
+.footerHeading {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.day {
+    font-weight: 600;
+    border-bottom: 1px solid gainsboro;
+}
+
+.hour {
+    font-size: 1rem;
+
+}
+
+.socialMedia {
+    text-decoration: none;
+    padding-right: 0.5rem;
+}
+
+.bi-facebook {
+    color: blue;
+}
+
+.bi-instagram {
+    color: rgb(131, 58, 180);
+}
+
+.bi-youtube {
+    color: red;
+}
