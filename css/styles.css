@@ -9,6 +9,7 @@
 header {
     font-family: 'Advent Pro', sans-serif;
     border-bottom: 2px solid rgba(237, 143, 91, 1);
+    font-weight:400;
 }
 
 /* Logo */
@@ -49,6 +50,7 @@ a {
     font-family: 'Italiana', serif;
     font-size: 8rem;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 400;
 
 }
 
@@ -123,11 +125,13 @@ a {
     font-size: 3rem;
     border-bottom: 1px solid black;
     border-color: rgba(237, 143, 91, 1);
+    font-weight: 600;
 }
 
 .treatments {
     font-family: 'Italiana', serif;
     font-size: 5rem;
+    font-weight: 400;
 
 }
 
@@ -204,19 +208,20 @@ a {
     border-bottom: 1px solid black;
     border-color: rgba(237, 143, 91, 1);
     margin-bottom: 8rem;
-
+    font-weight: 600;
 }
 
 .step {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Advent Pro', sans-serif;
     font-weight: 600;
     color: rgba(237, 143, 91, 1);
 }
 
 .stepText {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Advent Pro', sans-serif;
+    font-weight: 400;
 }
 
 .texContainer{
@@ -236,8 +241,6 @@ a {
     }
 }
 
-
-
  /* Make an apointment section */
 .appointmentContainer {
     background-image: url(../images/make-appointment.jpg);
@@ -247,57 +250,53 @@ a {
     width: 100%;
     margin-top: 8rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+    
 }
 
 .appointmentHeading{
-    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Italiana', serif;
     font-weight: 600;
     font-size: 4rem;
+    font-style: italic;
 }
 .textHeading{
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 .appointmentButton{
     color: white;
-    background-color: black;
+    background-color: transparent;
     font-family:'Advent Pro', sans-serif;
     font-size: 1.5rem;
-    border-radius: 0.3rem;
-    border: none;
+    border: 1px solid white; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
-/* Estilos make an appointment (max-width: 992px) */
-@media (max-width:992px){
-    .appointmentHeading{
-        font-size: 3rem;
-    }
-    .textHeading{
-        font-size: 1.4rem;
-    }
-    
-    .appointmentButton{
-        font-size: 1.3rem;
-    }
-}
-  
 
 /* Blog section */
 
+.blogContainer{
+    margin-bottom: 12rem;
+}
 .blogHeading {
     font-family: 'Italiana', serif;
     font-size: 5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
     margin-top: 4rem;
 }
 
 .card-title {
     font-family: 'Advent Pro', sans-serif;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-style: italic;
 
 }
 
@@ -312,20 +311,6 @@ a.btn {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Estilos Blog (max-width: 992px) */
-@media(max-width:992px) {
-    .blogHeading {
-        font-size: 5.4rem;
-    }
-}
-
-/* Estilos Blog (max-width: 768px) */
-@media(max-width:768px) {
-    .blogHeading {
-        font-size: 4rem;
-    }
-
-}
 
 /* Estilos Blog (max-width: 573px) */
 @media(max-width:576px) {
@@ -335,11 +320,16 @@ a.btn {
     .cardContainer {
         padding-top: 3rem;
     }
+    .blogContainer{
+        margin-bottom: 5.5rem;
+    }
 }
 
 
 /* FAQs section */
-
+.faqsContainer{
+    margin-bottom: 8rem;
+}
 .FaqsHeading {
     font-family: 'Italiana', serif;
     font-size: 6rem;
@@ -350,6 +340,7 @@ a.btn {
 .faqText {
     font-size: 2.5rem;
     font-family: 'Advent Pro', sans-serif;
+    font-style: italic;
 }
 
 .bi-arrow-right {
@@ -393,6 +384,10 @@ a.btn {
 
 /* Estilos Faqs(max-width: 576px) */
 @media(max-width:576px) {
+    .faqsContainer{
+        margin-bottom: 5.5rem;
+    }
+
     .FaqsHeading {
         font-size: 3rem;
     }
@@ -418,11 +413,13 @@ a.btn {
     font-size: 2.5rem;
     font-family: 'Advent Pro', sans-serif;
     font-weight: 600;
+    font-style: italic;
 }
 
 .aboutContent p {
     font-size: 1.58rem;
     font-family: 'Advent Pro', sans-serif;
+    font-weight: 400;
 }
 
 .aboutContent hr {
@@ -508,12 +505,14 @@ a.btn {
 .contactText {
     font-size: 1.5rem;
     font-family: 'Advent Pro', sans-serif;
+    font-weight: 600;
 }
 
 ::placeholder {
     color: black;
     font-size: 2rem;
     font-family: 'Advent Pro', sans-serif;
+    font-style: italic;
 }
 
 #name:focus::placeholder {
@@ -551,6 +550,8 @@ input {
     color: white;
     border: 1px solid rgba(237, 143, 91, 1);
     color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
 
 }
 
