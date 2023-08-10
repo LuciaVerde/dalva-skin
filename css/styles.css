@@ -1,22 +1,30 @@
+/* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    overflow: hidden;
+}
 
 /*Header*/
 
 header {
     font-family: 'Advent Pro', sans-serif;
-    border-bottom: 2px solid rgba(237, 143, 91, 1);
-    font-weight:400;
+    border-bottom: 2px solid rgba(204, 106, 51, 1);
+    font-weight: 400;
 }
 
 /* Logo */
 .logo {
     height: 60px;
     width: 84px;
-    cursor: pointer;
 }
 
 /* Navbar */
@@ -26,93 +34,165 @@ a {
     padding-right: 20px;
 }
 
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: rgba(204, 106, 51, 1);
+}
+
 .styleBtn {
-    border: 1px solid rgba(237, 143, 91, 1);
+    border: 1px solid rgba(204, 106, 51, 1);
     background-color: transparent;
-    color: rgba(237, 143, 91, 1);
-    padding: 4px 12px;
+    color: rgba(204, 106, 51, 1);
+    padding: 0.5rem 1.5rem;
     font-size: 20px;
     border-radius: 6px;
+
 }
 
 .styleBtn:hover {
-    background-color: rgba(237, 143, 91, 1);
+    background-color: rgba(204, 106, 51, 1);
     color: white;
 }
 
-/*Main heading section*/
-.mainHeadingCont {
-    margin-top: 5.5rem;
-    margin-bottom: 5.5rem;
+/* Hero section */
+.heroSection {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.mainHeading {
+.heroContainer {
+    background-color: rgba(249, 220, 193, 1);
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heroHeading {
     font-family: 'Italiana', serif;
     font-size: 8rem;
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-    font-weight: 400;
-
+    color: rgba(204, 106, 51, 1);
+    font-weight: 600;
+    --animate-duration: 1.5s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.skin {
-    color: rgba(237, 143, 91, 1);
+.heroText {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    color: rgba(204, 106, 51, 1);
+    --animate-duration: 1.7s;
 }
 
-.imageHeading {
-    height: 120px;
-    width: 210px;
-    border-radius: 7px;
-    margin-bottom: 30px;
+.heroBtn {
+    font-family: 'Lato', sans-serif;
+    padding: 0.7rem 10rem;
+    font-size: 1.1rem;
+    border-radius: 0.2rem;
+    font-weight: 600;
+    border: 1px solid rgba(204, 106, 51, 1);
+    background-color: white;
+    color: rgba(204, 106, 51, 1);
+    --animate-duration: 1.9s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos main meading (max-width: 1000px) */
+.heroImage {
+    border-bottom-left-radius: 45rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-@media (max-width:1000px) {
-    .mainHeading {
-        font-size: 6.5rem;
+/* Estilos hero (max-width:1650px) */
+@media (max-width:1650px) {
+    .heroHeading {
+        font-size: 7rem;
+    }
+
+    .heroText {
+        font-size: 1.5rem;
     }
 }
 
-/* Estilos main heading (max-width: 730px) */
-@media(max-width:730px) {
-    .mainHeading {
+/* Estilos hero (max-width:1460px) */
+@media(max-width:1460px) {
+    .heroHeading {
         font-size: 6rem;
     }
-    .imageHeading {
-        height: 7rem;
-        width: 12rem;
-        border-radius: 7px;
-        margin-bottom: 30px;
-    }
-}
-/* Estilos main heading (max-width: 674px) */
-@media(max-width:674px) {
-    .mainHeading {
-        font-size: 5.5rem;
-    }
-    .imageHeading {
-        height: 5rem;
-        width: 9rem;
-        border-radius: 7px;
-        margin-bottom: 30px;
-    }
-}
-/* Estilos main heading (max-width: 576px) */
-@media(max-width:576px) {
-    .mainHeading {
-        font-size: 5rem;
+
+    .heroText {
+        font-size: 1.4rem;
     }
 }
 
-@media(max-width:400px) {
-    .mainHeading {
-        font-size: 3.5rem;
+/* Estilos hero (max-width:1270px) */
+@media(max-width:1270px) {
+    .heroHeading {
+        font-size: 5rem;
+    }
+
+    .heroText {
+        font-size: 1.3rem;
+    }
+}
+
+/* Estilos hero (max-width:1077px) */
+@media(max-width:1077px) {
+    .heroHeading {
+        font-size: 4rem;
+    }
+
+    .heroText {
+        font-size: 1.2rem;
+    }
+}
+
+/* Estilos hero (max-width:992px) */
+@media(max-width:992px) {
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heroImage {
+        border-bottom-left-radius: 0rem;
+        box-shadow: none;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+/* Estilos hero (max-width:767px) */
+@media(max-width:767px) {
+    .heroHeading {
+        text-align: center;
+    }
+
+    .heroText {
+        text-align: center;
+    }
+
+    .heroBtn {
+        padding: 0.7rem 5rem;
+    }
+}
+
+/* Estilos hero (max-width:575px) */
+@media(max-width:575px) {
+    .heroHeading {
+        padding-top: 3rem;
     }
 }
 
 
 /* Tratments section */
-.treatmentsContainer {
+
+.treatmentsSection {
+    padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
@@ -124,8 +204,12 @@ a {
     font-family: 'Advent Pro', sans-serif;
     font-size: 3rem;
     border-bottom: 1px solid black;
-    border-color: rgba(237, 143, 91, 1);
+    border-color: rgba(204, 106, 51, 1);
     font-weight: 600;
+}
+
+.treatment {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .treatments {
@@ -143,10 +227,20 @@ a {
     padding-right: 25rem;
 }
 
-/* Estilos treatments (max-width: 1000px) */
+.treatment {
+    transition: transform 0.5s ease-in-out;
+}
+
+.treatment:hover {
+    transform: scale(1.2);
+    color: rgba(204, 106, 51, 1);
+}
+
+
+/* Estilos treatments (max-width: 1200px) */
 @media(max-width:1200px) {
     .treatments {
-        font-size: 3.5rem;
+        font-size: 5rem;
     }
 
     .treatmentsHeading {
@@ -160,15 +254,26 @@ a {
 
 /* Estilos treatments (max-width: 992px) */
 @media(max-width:992px) {
+    .treatments {
+        font-size: 3.8rem;
+    }
 
     .treatmentsHeading {
         text-align: center;
     }
 }
 
-/* Estilos treatments(max-width: 730px) */
-@media(max-width:730px) {
-    
+/* Estilos treatments(max-width: 760px) */
+@media(max-width:760px) {
+    .treatmentsSection {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .treatmentsHeadingContaniner {
+        padding-bottom: 3rem;
+    }
+
     .treatmentFour {
         padding-right: 0;
     }
@@ -187,27 +292,41 @@ a {
 
 /* Estilos treatments (max-width: 576px) */
 @media(max-width:576px) {
+    .treatmentsHeading {
+        font-size: 3rem;
+    }
+
     .treatments {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 }
 
 /* Estilos treatments(max-width: 400px) */
 @media(max-width:400px) {
+
     .treatments {
+        font-size: 2.5rem;
+    }
+
+    .treatmentsHeading {
         font-size: 2.5rem;
     }
 }
 
-
 /* Simple steps section */
+.stepsSection {
+    padding-bottom: 5rem;
+}
+
+.stepsContainer {
+    padding-top: 5rem;
+}
 
 .stepsHeading {
     font-family: 'Advent Pro', sans-serif;
     font-size: 3rem;
     border-bottom: 1px solid black;
-    border-color: rgba(237, 143, 91, 1);
-    margin-bottom: 8rem;
+    border-color: rgba(204, 106, 51, 1);
     font-weight: 600;
 }
 
@@ -215,35 +334,48 @@ a {
     font-size: 2.5rem;
     font-family: 'Advent Pro', sans-serif;
     font-weight: 600;
-    color: rgba(237, 143, 91, 1);
+    color: rgba(204, 106, 51, 1);
 }
 
 .stepText {
-    font-size: 2rem;
-    font-family: 'Advent Pro', sans-serif;
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
 
-.texContainer{
+.texContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.stepsImage {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 /* Estilos simple steps (max-width: 992px) */
 @media (max-width:992px) {
     .stepsHeading {
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
         text-align: center;
+        margin-bottom: 0rem;
     }
-    .containerSteps{
+
+    .stepsContainer {
         text-align: center;
+        padding-top: 3rem;
     }
+
+    .stepText {
+        font-size: 1.5rem;
+    }
+
 }
 
- /* Make an apointment section */
+/* Make an apointment section */
 .appointmentContainer {
-    background-image: url(../images/make-appointment.jpg);
+    background-image: url(../images/appointment-img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 450px;
@@ -254,110 +386,249 @@ a {
     justify-content: center;
     align-items: center;
     color: white;
-    
+
 }
 
-.appointmentHeading{
+.appointmentHeading {
     font-family: 'Italiana', serif;
     font-weight: 600;
     font-size: 4rem;
     font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.textHeading{
+
+.textHeading {
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.appointmentButton{
+.appointmentButton {
     color: white;
     background-color: transparent;
-    font-family:'Advent Pro', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1.5rem;
-    border: 1px solid white; 
+    border: 1px solid white;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
+/* Estilos appointment (max-width: 576px) */
+@media (max-width:576px) {
+    .appointmentHeading {
+        font-size: 3.5rem;
+    }
 
-/* Blog section */
+    .textHeading {
+        font-size: 1.4rem;
+    }
 
-.blogContainer{
-    margin-bottom: 12rem;
+    .appointmentButton {
+        font-size: 1.3rem;
+    }
 }
+
+@media (max-width:400px) {
+    .appointmentHeading {
+        font-size: 3rem;
+    }
+
+    .textHeading {
+        font-size: 1.2rem;
+    }
+
+    .appointmentButton {
+        font-size: 1.2rem;
+    }
+}
+
+/* Blog */
+
 .blogHeading {
     font-family: 'Italiana', serif;
     font-size: 5rem;
-    margin-bottom: 5rem;
-    margin-top: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.card-title {
-    font-family: 'Advent Pro', sans-serif;
-    font-weight: 600;
-    font-size: 1.8rem;
-    font-style: italic;
 
-}
-
-.card-text {
-    font-family: 'Roboto', sans-serif;
-}
-
-a.btn {
+.blogCard {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
-    font-weight: 400;
-    background-color: rgba(237, 143, 91, 1);
+    padding: 2rem;
+    height: 35rem;
+    width: 25rem;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.blogCard {
+    transition: transform 0.3s;
+    animation-fill-mode: backwards;
+}
+
+.blogCard:hover {
+    transform: scale(1.05);
+}
+
+.cardOne {
+    background-image: url(../images/blog-one.jpg);
+}
+
+.cardTwo {
+    background-image: url(../images/blog-two.jpg);
+}
+
+.cardThree {
+    background-image: url(../images/blog-three.jpg);
+}
+
+.column-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cardHeading {
+    font-size: 2.5rem;
+    font-family: 'Italiana', serif;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cardText {
+    font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.readBtn {
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.258);
+    color: white;
+    padding: 0.2rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.readBtn:hover {
+    background-color: white;
+    color: black;
 }
 
 
-/* Estilos Blog (max-width: 573px) */
+
+/* Estilos Blog (max-width: 1400px) */
+@media(max-width:1400px) {
+    .blogCard {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Estilos Blog (max-width: 768px) */
+@media(max-width:768px) {
+    .blogHeading {
+        font-size: 4.4rem;
+    }
+}
+
+/* Estilos Blog (max-width: 576px) */
 @media(max-width:576px) {
     .blogHeading {
-        font-size: 3rem;
+        font-size: 4rem;
     }
+
     .cardContainer {
         padding-top: 3rem;
     }
-    .blogContainer{
-        margin-bottom: 5.5rem;
-    }
+
 }
 
-
-/* FAQs section */
-.faqsContainer{
-    margin-bottom: 8rem;
+/* FAQs */
+.faqsTextsContainer {
+    padding-bottom: 5rem;
 }
-.FaqsHeading {
+
+.faqQuestion {
+    display: flex;
+    border: 1px solid rgba(204, 106, 51, 1);
+    ;
+    margin-bottom: 1rem;
+    align-items: center;
+    color: rgba(204, 106, 51, 1);
+}
+
+.faqQuestion {
+    transition: transform 0.5s ease-in-out;
+}
+
+.faqQuestion:hover {
+    transform: scale(1.2);
+    background-color: rgba(255, 208, 182, 0.19);
+    animation-fill-mode: backwards;
+}
+
+.faqsHeading {
     font-family: 'Italiana', serif;
-    font-size: 6rem;
-    text-align: center;
-
+    font-size: 5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .faqText {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-family: 'Advent Pro', sans-serif;
     font-style: italic;
+    padding: 1rem 4rem;
+    font-weight: 600;
 }
 
-.bi-arrow-right {
+.faqArrow {
     margin-left: 2rem;
+    color: rgba(204, 106, 51, 1);
 }
 
 .customLink {
     color: black
 }
 
-.faqHeadingContainer {
-    padding-top: 5rem;
+.faqQuestionOne {
+    --animate-duration: 0.5s;
 }
 
-.customFaqsHr {
-    color: rgba(237, 143, 91, 1);
-    border-width: 0.2rem;
+.faqQuestionTwo {
+    --animate-duration: 1s;
+}
+
+.faqQuestionThree {
+    --animate-duration: 2s;
+}
+
+.faqQuestionFour {
+    --animate-duration: 3s;
+}
+
+.faqQuestionFive {
+    --animate-duration: 4s;
+}
+
+/* Estilos Faqs(max-width: 1404px) */
+@media(max-width:1404px) {
+
+    .faqText {
+        font-size: 1.8rem;
+    }
 }
 
 /* Estilos Faqs(max-width: 1200px) */
@@ -367,14 +638,14 @@ a.btn {
     }
 
     .faqText {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 }
 
 /* Estilos Faqs(max-width: 768px) */
 @media(max-width:768px) {
-    .FaqsHeading {
-        font-size: 4rem;
+    .faqsHeading {
+        font-size: 4.4rem;
     }
 
     .faqText {
@@ -382,14 +653,15 @@ a.btn {
     }
 }
 
+
 /* Estilos Faqs(max-width: 576px) */
 @media(max-width:576px) {
-    .faqsContainer{
+    .faqsContainer {
         margin-bottom: 5.5rem;
     }
 
-    .FaqsHeading {
-        font-size: 3rem;
+    .faqsHeading {
+        font-size: 4.4rem;
     }
 
     .faqText {
@@ -398,15 +670,12 @@ a.btn {
 }
 
 
-/* About us Section */
+/* About us */
 
-.aboutMainHeading h1 {
+.aboutHeading {
     font-family: 'Italiana', serif;
-    font-size: 8rem;
-}
-
-.team {
-    color: rgba(237, 143, 91, 1);
+    font-size: 5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .aboutContent h2 {
@@ -416,9 +685,9 @@ a.btn {
     font-style: italic;
 }
 
-.aboutContent p {
-    font-size: 1.58rem;
-    font-family: 'Advent Pro', sans-serif;
+.aboutText {
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
 
@@ -443,25 +712,21 @@ a.btn {
     justify-content: center;
 }
 
-/* Estilos about us (max-width:1200px),
-(max-width: 992px) */
-@media(max-width:1200px),
-(max-width: 992px) {
-
-    .aboutMainHeading h1,
-    .ourTeam {
-        font-size: 6rem;
-        display: flex;
-        justify-content: center;
+/* Estilos about us (max-width:1200px), */
+@media(max-width:1200px) {
+    .aboutHeading {
+        font-size: 5rem;
     }
 
     .aboutContent h2 {
         font-size: 2.3rem;
         font-weight: 600;
+        text-align: center;
     }
 
     .aboutContent p {
         font-size: 1.5rem;
+        text-align: center;
     }
 
     .imgContainer figcaption {
@@ -471,10 +736,17 @@ a.btn {
 
 }
 
+/* Estilos about us(max-width:768px) */
+@media(max-width:768px) {
+    .aboutHeading {
+        font-size: 4.4rem;
+    }
+}
+
 
 /* Estilos about us(max-width:576px) */
 @media(max-width:576px) {
-    .aboutMainHeading h1 {
+    .aboutHeading {
         font-size: 4rem;
         padding-left: 0;
         padding-right: 0;
@@ -483,33 +755,53 @@ a.btn {
     .imgDiv {
         padding-top: 2rem;
     }
+}
 
+/* Estilos about us(max-width:400px) */
+@media(max-width:490px) {
     .aboutContent h2 {
-        font-size: 1.6rem;
-
+        font-size: 2rem;
         font-weight: 600;
     }
 
     .aboutContent p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
 
     }
 }
 
-/* Contact section */
+
+/* Contact */
+
+.imgFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactMain {
+    background-color: rgba(255, 208, 182, 0.19);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
 .contactHeading {
-    font-size: 6rem;
+    color: rgba(204, 106, 51, 1);
+    font-size: 5.5rem;
     font-family: 'Italiana', serif;
+    font-weight: 600;
 }
 
 .contactText {
     font-size: 1.5rem;
-    font-family: 'Advent Pro', sans-serif;
-    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: gray;
 }
 
 ::placeholder {
-    color: black;
+    color: gray;
     font-size: 2rem;
     font-family: 'Advent Pro', sans-serif;
     font-style: italic;
@@ -528,31 +820,33 @@ a.btn {
 }
 
 input {
-    padding-top: 1rem;
+    padding: 0.5rem;
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 0.1rem solid black;
+    border-bottom: 0.1rem solid gray;
+    background-color: transparent;
 }
 
 .area {
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 0.1rem solid black;
+    border-bottom: 0.1rem solid gray;
+    background-color: transparent;
 }
 
 .contactBtn {
-    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Lato', sans-serif;
     border-radius: 0.3rem;
     font-size: 1.3rem;
-    background-color: rgba(237, 143, 91, 1);
+    background-color: rgba(204, 106, 51, 1);
     color: white;
     border: 1px solid rgba(237, 143, 91, 1);
     color: white;
     font-weight: 600;
     letter-spacing: 2px;
-
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btnContainer {
@@ -561,7 +855,15 @@ input {
 
 .contactBtn:hover {
     background-color: transparent;
-    color: rgba(237, 143, 91, 1);
+    color: rgba(204, 106, 51, 1);
+}
+
+
+@media(max-width:1348px) {
+    .btnContainer {
+        padding-top: 2rem;
+    }
+
 }
 
 /* Estilos contact (max-width: 1200px) */
@@ -586,14 +888,18 @@ input {
     .btnContainer {
         padding-top: 3rem;
     }
-}
 
+}
 
 
 /* Estilos contact (max-width: 992px) */
 @media(max-width: 992px) {
     .contactHeading {
         font-size: 4rem;
+    }
+
+    .imgForm {
+        display: none;
     }
 
     .contactText {
@@ -623,15 +929,14 @@ input {
     .contactHeading {
         font-size: 3rem;
     }
-
 }
 
 
-/* Footer section */
+/* Footer */
 
 footer {
     background-color: rgba(255, 208, 182, 0.19);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-top: 8.5rem;
 }
 

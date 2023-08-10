@@ -4,20 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dalva Skin</title>
-    <link rel="shortcut icon" href="../images/dalva-favicon-sin-fondo.png" type="image/x-icon">
+    <meta name="description" content="This is the faqs page of a cosmetology center website">
+    <title>Dalva Skin|FAQs</title>
+    <link rel="shortcut icon" href="../images/dalva-favicon.png" type="image/x-icon">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- css -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
     <!-- header -->
-    <header class="navbar navbar-expand-lg px-2">
+    <header class="container-fluid navbar navbar-expand-lg px-2 animate__animated animate__fadeIn">
         <div class="container text-center">
             <a class="navbar-brand" href="../index.html">
                 <img class="logo" src="../images/dalva-logo.jpg" alt="Logo Dalva skin">
@@ -29,80 +32,74 @@
             <nav class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" style="color: black;" aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" style="color: black;" aria-current="page" href="./blog.html">Blog</a>
+                        <a class="nav-link" href="./blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: black" href="./aboutus.html">About us</a>
+                        <a class="nav-link" href="./aboutus.html">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: black" href="./faqs.html">FAQs</a>
+                        <a class="nav-link" href="./faqs.html">FAQs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: black" href="./contact.html">Contact</a>
+                        <a class="nav-link" href="./contact.html">Contact</a>
                     </li>
                 </ul>
                 <a class="pt-1" href="#">
-                    <button type="button" class="styleBtn" id="nav">Log In</button>
+                    <button type="button" class="btn styleBtn" id="nav">Log In</button>
                 </a>
             </nav>
         </div>
     </header>
 
-
     <main class="container-fluid faqsContainer">
-        <div class="pb-5 faqHeadingContainer">
-            <h1 class="text-center FaqsHeading">
-                OUR CLIENTS ASK
-            </h1>
-        </div>
-        <div class="row pt-3 d-flex justify-content-center">
-            <div class="d-flex-column col-xl-6 col-lg-7 col-md-8 col-sm-12 mx-auto">
-                <hr class="m-0 pt-3 customFaqsHr">
-                <div class="d-flex justify-content-between">
-                    <p class="faqText">Is there any risks associated?
-                    </p>
-                    <a class="customLink pt-2" href="#">
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-                <hr class="m-0 pt-3 customFaqsHr">
-                <div class="d-flex justify-content-between">
-                    <p class="faqText">Are there any discounts?
-                    </p>
-                    <a class="customLink pt-2" href="#">
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-                <hr class="m-0 pt-3 customFaqsHr">
-                <div class="d-flex justify-content-between">
-                    <p class="faqText">Is there age restrictions?
-                    </p>
-                    <a class="customLink pt-2" href="#">
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-                <hr class="m-0 pt-3 customFaqsHr">
-                <div class="d-flex justify-content-between">
-                    <p class="faqText">Is there age restrictions?
-                    </p>
-                    <a class="customLink pt-2" href="#">
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-                <hr class="m-0 pt-3 customFaqsHr">
-                <div class="d-flex justify-content-between">
-                    <p class="faqText">What is the clinic's privacy policy?
-                    </p>
-                    <a class="customLink pt-3" href="#">
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-                <hr class="m-0 customFaqsHr">
+        <div class="pb">
+            <div class="text-center faqsHeadingContainer my-5 animate__animated animate__fadeInDown">
+                <h1 class="faqsHeading">OUR CLIENTS ASKS</h1>
             </div>
-        </div>
+            <div class="row d-flex justify-content-center faqsTextsContainer">
+                <div class="d-flex-column col-xl-6 col-lg-7 col-md-8 col-sm-12 mx-auto">
+                    <div class="d-flex justify-content-between faqQuestion faqQuestionOne animate__animated animate__fadeIn">
+                        <p class="faqText">Is there any risks associated?
+                        </p>
+                        <a class="customLink pt-2" href="#">
+                            <i class="bi bi-arrow-right faqArrow"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between faqQuestion faqQuestionTwo  animate__animated animate__fadeIn">
+                        <p class="faqText">Are there any discounts?
+                        </p>
+                        <a class="customLink pt-2" href="#">
+                            <i class="bi bi-arrow-right faqArrow"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between faqQuestion faqQuestionThree animate__animated animate__fadeIn">
+                        <p class="faqText">Is there age restrictions?
+                        </p>
+                        <a class="customLink pt-2" href="#">
+                            <i class="bi bi-arrow-right faqArrow"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between faqQuestion faqQuestionFour animate__animated animate__fadeIn">
+                        <p class="faqText">What is the clinic's privacy policy?
+                        </p>
+                        <a class="customLink pt-2" href="#">
+                            <i class="bi bi-arrow-right faqArrow"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-between faqQuestion faqQuestionFive animate__animated animate__fadeIn">
+                        <p class="faqText">How do i make an appointment?
+                        </p>
+                        <a class="customLink pt-2" href="#">
+                            <i class="bi bi-arrow-right faqArrow"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
     </main>
 
     <!-- footer -->

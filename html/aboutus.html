@@ -4,81 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dalva Skin</title>
-    <link rel="shortcut icon" href="../images/dalva-favicon-sin-fondo.png" type="image/x-icon">
+    <meta name="description" content="This is the about us page of a cosmetology center website">
+    <title>Dalva Skin|About us</title>
+    <link rel="shortcut icon" href="../images/dalva-favicon.png" type="image/x-icon">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4f35de3737.js" crossorigin="anonymous"></script>
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- css -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <!-- header -->
-    <header class="navbar navbar-expand-lg px-2">
-        <div class="container text-center">
-            <a class="navbar-brand" href="../index.html">
-                <img class="logo" src="../images/dalva-logo.jpg" alt="Logo Dalva skin">
+   <!-- header -->
+   <header class="container-fluid navbar navbar-expand-lg px-2 animate__animated animate__fadeIn">
+    <div class="container text-center">
+        <a class="navbar-brand" href="../index.html">
+            <img class="logo" src="../images/dalva-logo.jpg" alt="Logo Dalva skin">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faqs.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <a class="pt-1" href="#">
+                <button type="button" class="btn styleBtn" id="nav">Log In</button>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link" style="color: black;" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" style="color: black;" aria-current="page" href="./blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: black" href="./aboutus.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: black" href="./faqs.html">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: black" href="./contact.html">Contact</a>
-                    </li>
-                </ul>
-                <a class="pt-1" href="#">
-                    <button type="button" class="styleBtn" id="nav">Log In</button>
-                </a>
-            </nav>
-        </div>
-    </header>
+        </nav>
+    </div>
+</header>
 
-    <main class="container ps-lg-5">
-        <div class="py-lg-5 py-5 aboutMainHeadingContainer">
-            <div class="row aboutMainHeading">
-                <h1>Meet</h1>
-            </div>
-            <div class="d-flex ourTeam">
-                <div class="aboutMainHeading">
-                    <h1><span class="our">Our</h1>
-                </div>
-                <div class="aboutMainHeading">
-                    <h1 class="team">Team</h1>
-                </div>
-            </div>
-
+    <main class="container ps-lg-5 pb-5">
+        <div class="text-center aboutHeadingContainer my-5 animate__animated animate__fadeInDown">
+            <h1 class="aboutHeading">MEET OUR TEAM</h1>
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-12  aboutContent mx-auto">
-                <h2> A profesional team</h2>
+            <div class="col-lg-6 col-md-12 aboutContent mx-auto">
+                <h2 class="animate__animated animate__fadeInLeft animate__fast"> A profesional team</h2>
                 <hr>
-                <p class="pb-4">We are professionals highly committed to providing comprehensive beauty, health
+                <p class="pb-4 aboutText animate__animated animate__fadeInLeft">We are professionals highly committed to providing comprehensive beauty,
+                    health
                     and wellness
                     care. We have a team of experts in the field of medical aesthetics, who strive to offer
                     exceptional quality service and products, always demonstrating our professionalism and warm
                     attention to you.
                 </p>
-                <h2> We care</h2>
+                <h2 class="animate__animated animate__fadeInLeft animate__fast"> We care</h2>
                 <hr>
-                <p class=" pb-sm-5">Our customers are our top priority, which is why we make sure to offer you
+                <p class="pb-sm-5 aboutText animate__animated animate__fadeInLeft">Our customers are our top priority, which is why we make sure to offer you
                     high-quality
                     products
                     and use cutting-edge technology. Our goal is to exceed your expectations by providing you
@@ -86,7 +81,7 @@
                     exceptional results and ensuring your satisfaction at every stage of the process.
                 </p>
             </div>
-            <div class="col-lg-6 col-md-12 imgDiv pb-5">
+            <div class="col-lg-6 col-md-12 imgDiv pb-5 animate__animated animate__fadeInRight">
                 <figure class="row imgContainer">
                     <img class="img-fluid mx-auto" src="../images/dra-alvarez.jpg" alt="Image of a Doctor">
                     <figcaption class="text-center pt-md-2"> Dra. Debora Álvarez</figcaption>
@@ -98,7 +93,7 @@
     <!-- footer -->
     <footer class="text-center text-lg-start text-dark m-0">
         <div class="row container pt-4 mx-auto">
-            <hr class="w-100 clearfix d-md-none"/>
+            <hr class="w-100 clearfix d-md-none" />
             <!-- contact-->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                 <p class="mb-4 footerHeading">CONTACT</p>

@@ -4,108 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dalva Skin</title>
-    <link rel="shortcut icon" href="./images/dalva-favicon-sin-fondo.png" type="image/x-icon">
+    <meta name="description" content="This is a website of a cosmetology center">
+    <title>Dalva Skin|Home</title>
+    <link rel="shortcut icon" href="./images/dalva-favicon.png" type="image/x-icon">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- iconos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <!-- header -->
-    <header class="navbar navbar-expand-lg px-2">
+    <header class="container-fluid navbar navbar-expand-lg px-2 animate__animated animate__fadeIn">
         <div class="container text-center">
             <a class="navbar-brand" href="index.html">
-                <img class="logo" src="./images/dalva-logo.jpg" alt="Logo Dalva skin">
+                <img class="logo" src="images/dalva-logo.jpg" alt="Logo Dalva skin">
             </a>
-            <button class=" navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="collapse navbar-collapse" id="navbarNav">
+            <nav class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" style="color: black;" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" style="color: black;" aria-current="page" href="./html/blog.html">Blog</a>
+                        <a class="nav-link" href="./html/blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: black" href="./html/aboutus.html">About us</a>
+                        <a class="nav-link" href="./html/aboutus.html">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: black" href="./html/faqs.html">FAQs</a>
+                        <a class="nav-link" href="./html/faqs.html">FAQs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: black" href="./html/contact.html">Contact</a>
+                        <a class="nav-link" href="./html/contact.html">Contact</a>
                     </li>
                 </ul>
                 <a class="pt-1" href="#">
-                    <button type="button" class="styleBtn" id="nav">Log In</button>
+                    <button type="button" class="btn styleBtn" id="nav">Log In</button>
                 </a>
             </nav>
         </div>
     </header>
 
-    <main class="container">
-        <!-- heading section -->
-        <section class="mainHeadingCont">
+    <main >
+        <!-- hero section -->
+        <section class="container-fluid heroSection">
             <div class="row">
-                <div class="col text-center">
-                    <h1 class="mainHeading">
-                        HEALTHY
-                    </h1>
-                    <h1 class="mainHeading skin"> SKIN <img class="imageHeading mx-4" src="images/mujer-heading1.jpg"
-                            alt=" Image of a woman">
-                    </h1>
-                    <h1 class="mainHeading"> IS BEAUTIFUL</h1>
-                    <h1 class="mainHeading skin"><img class="imageHeading imgHeadingTwo mx-4"
-                            src="images/mujer-heading2.jpg" alt="Image of a woman">SKIN
-                    </h1>
+                <div class="row heroContainer px-0 mx-0 pt-lg-0 pt-sm-5">
+                    <div class="col-lg-6 col-md-12 text-lg-start text-md-center ps-lg-5 contentContainer">
+                        <h1 class="heroHeading animate__animated animate__fadeInUp">Healthy skin is beautiful skin</h1>
+                        <p class="heroText py-4 animate__animated animate__fadeInUp">We enhance the beauty of your skin,
+                            cultivating its healthy glow
+                            through conscious care and quality products.</p>
+                        <button
+                            class="heroBtn col-lg-4 col-sm-4 d-flex justify-content-center animate__animated animate__fadeInUp">DISCOVER<i
+                                class="bi bi-arrow-right"></i></button>
+                    </div>
+                    <div
+                        class="col-lg-6 text-lg-end text-sm-center p-0 m-0 animate__animated animate__fadeIn animate__slower">
+                        <img class="img-fluid heroImage" src="images/hero-image.jpg" alt=" Woman">
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- treatments section -->
-        <section class="treatmentsContainer">
+        <section class="container mx-auto treatmentsSection">
             <div class="treatmentsHeadingContaniner px-lg-5">
-                <h2 class="treatmentsHeading">Treatments</h2>
+                <h2 class="treatmentsHeading">TREATMENTS</h2>
             </div>
 
             <div class="row d-flex flex-column text text-center treatments">
-                <div class="col">
-                    <p class="treatmentOne "><sup>01</sup>BOTOX</p>
+                <div data-aos="fade-left" class="col">
+                    <p class="treatment treatmentOne"><sup>01</sup>BOTOX</p>
                 </div>
-                <div class="col">
-                    <p class="treatmentTwo"><sup>02</sup>FILLER</p>
+                <div data-aos="fade-right" class="col">
+                    <p class="treatment treatmentTwo"><sup>02</sup>FILLER</p>
                 </div>
-                <div class="col">
-                    <p class="treatmentThree"><sup>03</sup>ANTI-AGING TREATMENT</p>
+                <div data-aos="fade-left" class="col">
+                    <p class="treatment treatmentThree"><sup>03</sup>ANTI-AGING TREATMENT</p>
                 </div>
-                <div class="col">
-                    <p class="treatmentFour"><sup>04</sup>SKINCARE</p>
+                <div data-aos="fade-right" class="col">
+                    <p class="treatment treatmentFour"><sup>04</sup>SKINCARE</p>
                 </div>
-                <div>
-                    <p class="treatmentFive"><sup>05</sup>ACNE TREATMENT</p>
+                <div data-aos="fade-left">
+                    <p class="treatment treatmentFive"><sup>05</sup>ACNE TREATMENT</p>
                 </div>
             </div>
         </section>
 
         <!-- steps section-->
-        <section>
+        <section class="container mx-auto stepsSection">
             <div class="stepsHeadingContaniner px-lg-5">
-                <h2 class="stepsHeading">Simple Steps</h2>
+                <h2 class="stepsHeading">SIMPLE STEPS</h2>
             </div>
-            <div class="row containerSteps">
+            <div class="row stepsContainer">
                 <div class="row StepsContainer pb-lg-5 pb-md-2 ps-5">
-                    <div class="col-lg-6 col-md-12">
-                        <img class="img-fluid" src="images/consultation.webp" alt=" Woman in a clinic">
+                    <div data-aos="fade-right" class="col-lg-6 col-md-12">
+                        <img class="img-fluid stepsImage" src="images/consultation.webp" alt=" Woman in a clinic">
                     </div>
-                    <div class="col-lg-6 col-md-12 texContainer">
+                    <div data-aos="fade-left" class="col-lg-6 col-md-12 texContainer">
                         <p class="step pb-2 py-4"> CONSULTATION</p>
                         <p class="stepText">We offer you a space to express your concerns, ask questions
                             and discuss your aesthetic needs. Our highly trained professionals will assess you and
@@ -114,24 +122,23 @@
                         </p>
                     </div>
                 </div>
-
-                <div class="row StepsContainer pt-lg-5 pb-lg-5 pt-md-2 pb-md-2 ps-5">
-                    <div class="col-lg-6 col-md-12">
-                        <img class="img-fluid" src="images/treatment.jpg" alt="Beauty treatment image">
+                <div class="row pt-lg-5 pb-lg-5 pt-md-2 pb-md-2 ps-5">
+                    <div data-aos="fade-right" class="col-lg-6 col-md-12">
+                        <img class="img-fluid stepsImage" src="images/treatment.jpg" alt="Beauty treatment image">
                     </div>
-                    <div class="col-lg-6 col-md-12 texContainer">
+                    <div data-aos="fade-left" class="col-lg-6 col-md-12 texContainer">
                         <p class="step pb-2 py-4"> TREATMENT</p>
                         <p class="stepText">Once we know which treatment suits your needs, we proceed to carry
                             it out with the utmost care and respect that our clients deserve.
                         </p>
                     </div>
                 </div>
-
                 <div class="row StepsContainer pt-lg-5 pb-lg-5 pt-md-2 pb-md-2 ps-5">
-                    <div class="col-lg-6 col-md-12">
-                        <img class="img-fluid" src="images/home-care.jpg" alt="Woman aplying cream on her face image">
+                    <div data-aos="fade-right" class="col-lg-6 col-md-12">
+                        <img class="img-fluid stepsImage" src="images/home-care.jpg"
+                            alt="Woman aplying cream on her face image">
                     </div>
-                    <div class="col-lg-6 col-md-12 texContainer">
+                    <div data-aos="fade-left" class="col-lg-6 col-md-12 texContainer">
                         <p class="step pb-2 py-4"> HOME CARE</p>
                         <p class="stepText">It is important to maintain a skin and body care routine even
                             outside the clinic to ensure best results. That is why we are committed to helping you take
@@ -144,15 +151,12 @@
         </section>
     </main>
 
-
     <!-- appointment section-->
-
     <section>
         <div class="container-fluid appointmentContainer text-center">
             <p class="appointmentHeading">Make an appointment</p>
             <p class="textHeading my-3">Our team awaits you in our clinic to give you the treatment you deserve.</p>
-            <a href="#"><button class="appointmentButton py-1 px-5 mt-3">Schedule <i
-                        class="bi bi-arrow-right m-0"></i></button></a>
+            <button class="appointmentButton py-1 px-5 mt-3">Schedule <i class="bi bi-arrow-right m-0"></i></button>
         </div>
     </section>
 
@@ -182,7 +186,6 @@
             <!-- social media-->
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 pb-4">
                 <p class="mb-4 footerHeading">FOLLOW US</p>
-
                 <!-- Facebook -->
                 <a class="socialMedia" href="#">
                     <i class="bi bi-facebook"></i>
@@ -205,6 +208,10 @@
     </footer>
 
     <!-- bootstrap -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
