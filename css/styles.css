@@ -243,10 +243,6 @@ a {
         font-size: 5rem;
     }
 
-    .treatmentsHeading {
-        font-size: 3rem;
-    }
-
     .treatmentFour {
         padding-right: 18rem;
     }
@@ -254,12 +250,17 @@ a {
 
 /* Estilos treatments (max-width: 992px) */
 @media(max-width:992px) {
+    .treatmentsSection{
+        padding-bottom: 2rem;
+    }
     .treatments {
         font-size: 3.8rem;
     }
-
+    .treatmentsHeadingContaniner{
+        padding-bottom: 3rem;
+    }
     .treatmentsHeading {
-        text-align: center;
+        text-align: center; 
     }
 }
 
@@ -267,7 +268,6 @@ a {
 @media(max-width:760px) {
     .treatmentsSection {
         padding-top: 3rem;
-        padding-bottom: 3rem;
     }
 
     .treatmentsHeadingContaniner {
@@ -293,11 +293,19 @@ a {
 /* Estilos treatments (max-width: 576px) */
 @media(max-width:576px) {
     .treatmentsHeading {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .treatments {
         font-size: 3.5rem;
+    }
+    .treatment {
+        transition: none;
+    }
+    
+    .treatment:hover {
+        transform: none;
+        color: rgba(204, 106, 51, 1);
     }
 }
 
@@ -305,10 +313,6 @@ a {
 @media(max-width:400px) {
 
     .treatments {
-        font-size: 2.5rem;
-    }
-
-    .treatmentsHeading {
         font-size: 2.5rem;
     }
 }
@@ -372,6 +376,13 @@ a {
     }
 
 }
+@media (max-width:576px) {
+    .stepsHeading {
+        font-size: 2.5rem;
+    }
+}
+
+
 
 /* Make an apointment section */
 .appointmentContainer {
@@ -413,6 +424,17 @@ a {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
+
+/* Estilos appointment (max-width: 992px) */
+@media (max-width:992px){
+    .appointmentContainer{
+        margin-top: 3rem;
+    }
+    .stepsSection{
+        padding-bottom: 0rem;
+    }
+}
+
 
 /* Estilos appointment (max-width: 576px) */
 @media (max-width:576px) {
@@ -558,7 +580,7 @@ a {
 
 /* FAQs */
 .faqsTextsContainer {
-    padding-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 
 .faqQuestion {
@@ -647,9 +669,23 @@ a {
     .faqsHeading {
         font-size: 4.4rem;
     }
+    .faqsContainer{
+        margin-bottom: 0rem;
+    }
+    .noMarginFooter{
+        margin-top: 0rem;
+    }
 
     .faqText {
         font-size: 2rem;
+    }
+    .faqQuestion {
+        transition: none;
+    }
+    
+    .faqQuestion:hover {
+        transform: none;
+        background-color: rgba(255, 208, 182, 0.19);
     }
 }
 
@@ -657,7 +693,7 @@ a {
 /* Estilos Faqs(max-width: 576px) */
 @media(max-width:576px) {
     .faqsContainer {
-        margin-bottom: 5.5rem;
+        margin-bottom: 0rem;
     }
 
     .faqsHeading {
@@ -667,6 +703,7 @@ a {
     .faqText {
         font-size: 1.5rem;
     }
+    
 }
 
 
@@ -970,4 +1007,10 @@ footer {
 
 .bi-youtube {
     color: red;
+}
+
+@media(max-width:768px){
+    .noMarginFooter {
+        margin-top: 0rem;
+    }
 }
