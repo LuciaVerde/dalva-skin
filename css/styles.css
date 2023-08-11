@@ -250,17 +250,29 @@ a {
 
 /* Estilos treatments (max-width: 992px) */
 @media(max-width:992px) {
-    .treatmentsSection{
+    .treatmentsSection {
         padding-bottom: 2rem;
     }
+
     .treatments {
         font-size: 3.8rem;
     }
-    .treatmentsHeadingContaniner{
+
+    .treatmentsHeadingContaniner {
         padding-bottom: 3rem;
     }
+
     .treatmentsHeading {
-        text-align: center; 
+        text-align: center;
+    }
+
+    .treatment {
+        transition: none;
+    }
+
+    .treatment:hover {
+        transform: none;
+        color: rgba(204, 106, 51, 1);
     }
 }
 
@@ -281,6 +293,7 @@ a {
     .treatmentTwo {
         padding-left: 0;
     }
+
 }
 
 /* Estilos treatments(max-width: 674px) */
@@ -299,14 +312,7 @@ a {
     .treatments {
         font-size: 3.5rem;
     }
-    .treatment {
-        transition: none;
-    }
-    
-    .treatment:hover {
-        transform: none;
-        color: rgba(204, 106, 51, 1);
-    }
+
 }
 
 /* Estilos treatments(max-width: 400px) */
@@ -376,6 +382,7 @@ a {
     }
 
 }
+
 @media (max-width:576px) {
     .stepsHeading {
         font-size: 2.5rem;
@@ -426,11 +433,12 @@ a {
 }
 
 /* Estilos appointment (max-width: 992px) */
-@media (max-width:992px){
-    .appointmentContainer{
+@media (max-width:1200px) {
+    .appointmentContainer {
         margin-top: 3rem;
     }
-    .stepsSection{
+
+    .stepsSection {
         padding-bottom: 0rem;
     }
 }
@@ -502,14 +510,20 @@ a {
 
 .cardOne {
     background-image: url(../images/blog-one.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .cardTwo {
     background-image: url(../images/blog-two.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .cardThree {
     background-image: url(../images/blog-three.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .column-content {
@@ -559,11 +573,19 @@ a {
     }
 }
 
+@media(max-width: 992px) {
+    .mainBlog {
+        padding-bottom: 3rem;
+    }
+}
+
+
 /* Estilos Blog (max-width: 768px) */
 @media(max-width:768px) {
     .blogHeading {
         font-size: 4.4rem;
     }
+
 }
 
 /* Estilos Blog (max-width: 576px) */
@@ -669,20 +691,23 @@ a {
     .faqsHeading {
         font-size: 4.4rem;
     }
-    .faqsContainer{
+
+    .faqsContainer {
         margin-bottom: 0rem;
     }
-    .noMarginFooter{
+
+    .noMarginFooter {
         margin-top: 0rem;
     }
 
     .faqText {
         font-size: 2rem;
     }
+
     .faqQuestion {
         transition: none;
     }
-    
+
     .faqQuestion:hover {
         transform: none;
         background-color: rgba(255, 208, 182, 0.19);
@@ -703,7 +728,7 @@ a {
     .faqText {
         font-size: 1.5rem;
     }
-    
+
 }
 
 
@@ -1009,7 +1034,7 @@ footer {
     color: red;
 }
 
-@media(max-width:768px){
+@media(max-width:1279px) {
     .noMarginFooter {
         margin-top: 0rem;
     }
