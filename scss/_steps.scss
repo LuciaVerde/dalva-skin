@@ -1,0 +1,65 @@
+.stepsSection {
+    padding-bottom: $spacing-xlarge;
+
+    .stepsHeading {
+        font-family: $font-advent-pro;
+        font-size: $font-size-xxlarge;
+        border-bottom: 1px solid black;
+        border-color: $color-primary;
+        font-weight: 600;
+    }
+
+    .stepsContainer {
+        padding-top: $spacing-xlarge;
+
+        .stepContent {
+            .stepImgContainer {
+                .stepsImage {
+                    box-shadow: $box-shadow;
+                }
+            }
+
+            .texContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .stepText {
+                    font-size: $font-size-large;
+                    font-family: $font-lato;
+                    font-weight: 400;
+                }
+
+                .step {
+                    font-size: $font-size-xlarge;
+                    font-family: $font-advent-pro;
+                    font-weight: 600;
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .stepsHeading {
+        margin-bottom: $spacing-xlarge;
+        text-align: center;
+        margin-bottom: 0rem;
+    }
+
+    .stepsContainer {
+        text-align: center;
+        padding-top: $spacing-medium;
+    }
+
+    .stepText {
+        font-size: $font-size-medium;
+    }
+}
+
+@media (max-width: 576px) {
+    .stepsHeading {
+        font-size: $font-size-large;
+    }
+}

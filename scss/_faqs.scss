@@ -1,0 +1,64 @@
+.faqsHeading {
+    font-family: $font-italiana;
+    font-size: $font-size-xxxxlarge;
+    text-shadow: 2px 2px 4px $color-shadow;
+}
+
+.faqsTextsContainer {
+    margin-bottom: $spacing-xlarge;
+
+    .faqQuestion {
+        display: flex;
+        border: 1px solid $color-primary;
+        align-items: center;
+        color: $color-primary;
+        transition: transform 0.5s ease-in-out;
+
+        &:hover {
+            transform: scale(1.2);
+            background-color: $color-secondary;
+            animation-fill-mode: backwards;
+        }
+
+        &.faqQuestionOne {
+            --animate-duration: 0.5s;
+        }
+
+        &.faqQuestionTwo {
+            --animate-duration: 1s;
+        }
+
+        &.faqQuestionThree {
+            --animate-duration: 2s;
+        }
+
+        &.faqQuestionFour {
+            --animate-duration: 3s;
+        }
+
+        &.faqQuestionFive {
+            --animate-duration: 4s;
+        }
+
+        .faqText {
+            font-size: $font-size-xlarge;
+            font-family: $font-advent-pro;
+            font-style: italic;
+            padding: 1rem 4rem;
+            font-weight: 600;
+        }
+        .faqArrow {
+            margin-left: 2rem;
+            color: $color-primary;
+            font-size: $font-size-large;
+        }
+    }
+
+   
+
+    
+
+    .customLink {
+        color: black;
+    }
+}

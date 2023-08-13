@@ -1,0 +1,60 @@
+@import "variables";
+@import "header";
+@import "footer";
+@import "hero";
+@import "form";
+@import "cards";
+@import "faqs";
+@import "general";
+@import "steps";
+@import "treatments";
+@import "appointment";
+
+
+//About Us
+
+.aboutHeading {
+    font-family: $font-italiana;
+    font-size: $font-size-xxxxlarge;
+    text-shadow: 2px 2px 4px solid $color-shadow;
+}
+
+.aboutContent {
+    h2 {
+        font-size: $font-size-xlarge;
+        font-family: $font-advent-pro;
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    hr {
+        border-color: $border-color;
+        border-width: 0.5rem;
+    }
+
+    .aboutText {
+        font-size: $font-size-medium;
+        font-family: $font-lato;
+        font-weight: 400;
+    }
+
+}
+
+.imgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .imgContainer {
+        img {
+            width: fit-content;
+        }
+
+        figcaption {
+            font-family: $font-advent-pro;
+            font-size: $font-size-large;
+            font-weight: 600;
+        }
+    }
+}

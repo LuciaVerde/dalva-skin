@@ -1,0 +1,126 @@
+@mixin hero-section {
+    .heroSection {
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .heroContainer {
+        background-color: rgba(249, 220, 193, 1);
+    }
+
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .heroHeading {
+        font-family: 'Italiana', serif;
+        font-size: 8rem;
+        color:$color-primary;
+        font-weight: 600;
+        --animate-duration: 1.5s;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .heroText {
+        font-family: $font-lato;
+        font-size: 2rem;
+        color: $color-primary;
+        --animate-duration: 1.7s;
+    }
+
+    .heroBtn {
+        font-family: 'Lato', sans-serif;
+        padding: 0.7rem 10rem;
+        font-size: 1.1rem;
+        border-radius: 0.2rem;
+        font-weight: 600;
+        border: 1px solid rgba(204, 106, 51, 1);
+        background-color: white;
+        color: rgba(204, 106, 51, 1);
+        --animate-duration: 1.9s;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .heroImage {
+        border-bottom-left-radius: 45rem;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 1650px) {
+        .heroHeading {
+            font-size: 7rem;
+        }
+
+        .heroText {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media(max-width: 1460px) {
+        .heroHeading {
+            font-size: 6rem;
+        }
+
+        .heroText {
+            font-size: 1.4rem;
+        }
+    }
+
+    @media(max-width: 1270px) {
+        .heroHeading {
+            font-size: 5rem;
+        }
+
+        .heroText {
+            font-size: 1.3rem;
+        }
+    }
+
+    @media(max-width: 1077px) {
+        .heroHeading {
+            font-size: 4rem;
+        }
+
+        .heroText {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media(max-width: 992px) {
+        .contentContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .heroImage {
+            border-bottom-left-radius: 0rem;
+            box-shadow: none;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+    }
+
+    @media(max-width: 767px) {
+        .heroHeading {
+            text-align: center;
+        }
+
+        .heroText {
+            text-align: center;
+        }
+
+        .heroBtn {
+            padding: 0.7rem 5rem;
+        }
+    }
+
+    @media(max-width: 575px) {
+        .heroHeading {
+            padding-top: 3rem;
+        }
+    }
+}
+
+@include hero-section;

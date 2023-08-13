@@ -1,0 +1,40 @@
+.treatmentsSection {
+    padding-top: $spacing-xlarge;
+    padding-bottom: $spacing-xlarge;
+
+    .treatmentsHeadingContaniner {
+        padding-bottom: $spacing-xlarge;
+
+        .treatmentsHeading {
+            font-family: $font-advent-pro;
+            font-size: $font-size-xxlarge;
+            border-bottom: 1px solid $color-black;
+            border-color: $color-primary;
+            font-weight: 600;
+        }
+    }
+
+    .treatments {
+        font-family: $font-italiana;
+        font-size: $font-size-xxxxlarge;
+        font-weight: 400;
+
+        .treatment {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            transition: transform $animate-duration ease-in-out;
+
+            &:hover {
+                transform: scale(1.2);
+                color: $color-primary;
+            }
+
+            &.treatmentTwo {
+                padding-left: $spacing-xxxlarge;
+            }
+
+            &.treatmentFour {
+                padding-right: $spacing-large;
+            }
+        }
+    }
+}

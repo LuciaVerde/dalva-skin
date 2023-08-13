@@ -1,1041 +1,541 @@
-/* Fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-main {
-    overflow: hidden;
-}
-
-/*Header*/
-
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 header {
-    font-family: 'Advent Pro', sans-serif;
-    border-bottom: 2px solid rgba(204, 106, 51, 1);
-    font-weight: 400;
+  font-family: "Advent Pro", sans-serif;
+  border-bottom: 2px solid rgb(204, 106, 51);
+  font-weight: 400;
+}
+header .logo {
+  height: 60px;
+  width: 84px;
+}
+header li {
+  font-size: 3rem;
+  padding-right: 1rem;
+}
+header li .nav-link {
+  text-decoration: none;
+  font-size: 2rem;
+  padding-right: 1rem;
+  color: black;
+}
+header li .nav-link:hover {
+  color: rgb(204, 106, 51);
+}
+header .styleBtn {
+  border: 1px solid rgb(204, 106, 51);
+  background-color: transparent;
+  color: rgb(204, 106, 51);
+  padding: 0.5rem 1.5rem;
+  font-size: 20px;
+  border-radius: 6px;
+}
+header .styleBtn:hover {
+  background-color: rgb(204, 106, 51);
+  color: white;
 }
 
-/* Logo */
-.logo {
-    height: 60px;
-    width: 84px;
+footer {
+  background-color: rgba(255, 208, 182, 0.19);
+  font-family: "Lato", sans-serif;
+}
+footer .footerHeading {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+footer .day {
+  font-weight: 600;
+  border-bottom: 1px solid gray;
+}
+footer .hour {
+  font-size: 1.2rem;
+}
+footer .socialMedia {
+  text-decoration: none;
+  padding-right: 0.5rem;
+  color: rgb(204, 106, 51);
+  font-size: 1.5rem;
+}
+footer .bi-facebook {
+  color: blue;
+}
+footer .bi-instagram {
+  color: rgb(131, 58, 180);
+}
+footer .bi-youtube {
+  color: red;
+}
+footer .rights {
+  font-family: "Lato", sans-serif;
 }
 
-/* Navbar */
-li,
-a {
-    font-size: 26px;
-    padding-right: 20px;
-}
-
-.nav-link {
-    color: black;
-}
-
-.nav-link:hover {
-    color: rgba(204, 106, 51, 1);
-}
-
-.styleBtn {
-    border: 1px solid rgba(204, 106, 51, 1);
-    background-color: transparent;
-    color: rgba(204, 106, 51, 1);
-    padding: 0.5rem 1.5rem;
-    font-size: 20px;
-    border-radius: 6px;
-
-}
-
-.styleBtn:hover {
-    background-color: rgba(204, 106, 51, 1);
-    color: white;
-}
-
-/* Hero section */
 .heroSection {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .heroContainer {
-    background-color: rgba(249, 220, 193, 1);
+  background-color: rgb(249, 220, 193);
 }
 
 .contentContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .heroHeading {
-    font-family: 'Italiana', serif;
-    font-size: 8rem;
-    color: rgba(204, 106, 51, 1);
-    font-weight: 600;
-    --animate-duration: 1.5s;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Italiana", serif;
+  font-size: 8rem;
+  color: rgb(204, 106, 51);
+  font-weight: 600;
+  --animate-duration: 1.5s;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .heroText {
-    font-family: 'Lato', sans-serif;
-    font-size: 2rem;
-    color: rgba(204, 106, 51, 1);
-    --animate-duration: 1.7s;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  color: rgb(204, 106, 51);
+  --animate-duration: 1.7s;
 }
 
 .heroBtn {
-    font-family: 'Lato', sans-serif;
-    padding: 0.7rem 10rem;
-    font-size: 1.1rem;
-    border-radius: 0.2rem;
-    font-weight: 600;
-    border: 1px solid rgba(204, 106, 51, 1);
-    background-color: white;
-    color: rgba(204, 106, 51, 1);
-    --animate-duration: 1.9s;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: "Lato", sans-serif;
+  padding: 0.7rem 10rem;
+  font-size: 1.1rem;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  border: 1px solid rgb(204, 106, 51);
+  background-color: white;
+  color: rgb(204, 106, 51);
+  --animate-duration: 1.9s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .heroImage {
-    border-bottom-left-radius: 45rem;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 45rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos hero (max-width:1650px) */
-@media (max-width:1650px) {
-    .heroHeading {
-        font-size: 7rem;
-    }
-
-    .heroText {
-        font-size: 1.5rem;
-    }
+@media (max-width: 1650px) {
+  .heroHeading {
+    font-size: 7rem;
+  }
+  .heroText {
+    font-size: 1.5rem;
+  }
 }
-
-/* Estilos hero (max-width:1460px) */
-@media(max-width:1460px) {
-    .heroHeading {
-        font-size: 6rem;
-    }
-
-    .heroText {
-        font-size: 1.4rem;
-    }
+@media (max-width: 1460px) {
+  .heroHeading {
+    font-size: 6rem;
+  }
+  .heroText {
+    font-size: 1.4rem;
+  }
 }
-
-/* Estilos hero (max-width:1270px) */
-@media(max-width:1270px) {
-    .heroHeading {
-        font-size: 5rem;
-    }
-
-    .heroText {
-        font-size: 1.3rem;
-    }
-}
-
-/* Estilos hero (max-width:1077px) */
-@media(max-width:1077px) {
-    .heroHeading {
-        font-size: 4rem;
-    }
-
-    .heroText {
-        font-size: 1.2rem;
-    }
-}
-
-/* Estilos hero (max-width:992px) */
-@media(max-width:992px) {
-    .contentContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .heroImage {
-        border-bottom-left-radius: 0rem;
-        box-shadow: none;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-}
-
-/* Estilos hero (max-width:767px) */
-@media(max-width:767px) {
-    .heroHeading {
-        text-align: center;
-    }
-
-    .heroText {
-        text-align: center;
-    }
-
-    .heroBtn {
-        padding: 0.7rem 5rem;
-    }
-}
-
-/* Estilos hero (max-width:575px) */
-@media(max-width:575px) {
-    .heroHeading {
-        padding-top: 3rem;
-    }
-}
-
-
-/* Tratments section */
-
-.treatmentsSection {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
-
-.treatmentsHeadingContaniner {
-    padding-bottom: 5rem;
-}
-
-.treatmentsHeading {
-    font-family: 'Advent Pro', sans-serif;
-    font-size: 3rem;
-    border-bottom: 1px solid black;
-    border-color: rgba(204, 106, 51, 1);
-    font-weight: 600;
-}
-
-.treatment {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.treatments {
-    font-family: 'Italiana', serif;
+@media (max-width: 1270px) {
+  .heroHeading {
     font-size: 5rem;
-    font-weight: 400;
-
+  }
+  .heroText {
+    font-size: 1.3rem;
+  }
 }
-
-.treatmentTwo {
-    padding-left: 9rem;
-}
-
-.treatmentFour {
-    padding-right: 25rem;
-}
-
-.treatment {
-    transition: transform 0.5s ease-in-out;
-}
-
-.treatment:hover {
-    transform: scale(1.2);
-    color: rgba(204, 106, 51, 1);
-}
-
-
-/* Estilos treatments (max-width: 1200px) */
-@media(max-width:1200px) {
-    .treatments {
-        font-size: 5rem;
-    }
-
-    .treatmentFour {
-        padding-right: 18rem;
-    }
-}
-
-/* Estilos treatments (max-width: 992px) */
-@media(max-width:992px) {
-    .treatmentsSection {
-        padding-bottom: 2rem;
-    }
-
-    .treatments {
-        font-size: 3.8rem;
-    }
-
-    .treatmentsHeadingContaniner {
-        padding-bottom: 3rem;
-    }
-
-    .treatmentsHeading {
-        text-align: center;
-    }
-
-    .treatment {
-        transition: none;
-    }
-
-    .treatment:hover {
-        transform: none;
-        color: rgba(204, 106, 51, 1);
-    }
-}
-
-/* Estilos treatments(max-width: 760px) */
-@media(max-width:760px) {
-    .treatmentsSection {
-        padding-top: 3rem;
-    }
-
-    .treatmentsHeadingContaniner {
-        padding-bottom: 3rem;
-    }
-
-    .treatmentFour {
-        padding-right: 0;
-    }
-
-    .treatmentTwo {
-        padding-left: 0;
-    }
-
-}
-
-/* Estilos treatments(max-width: 674px) */
-@media(max-width:674px) {
-    .treatments {
-        font-size: 2.5rem;
-    }
-}
-
-/* Estilos treatments (max-width: 576px) */
-@media(max-width:576px) {
-    .treatmentsHeading {
-        font-size: 2.5rem;
-    }
-
-    .treatments {
-        font-size: 3.5rem;
-    }
-
-}
-
-/* Estilos treatments(max-width: 400px) */
-@media(max-width:400px) {
-
-    .treatments {
-        font-size: 2.5rem;
-    }
-}
-
-/* Simple steps section */
-.stepsSection {
-    padding-bottom: 5rem;
-}
-
-.stepsContainer {
-    padding-top: 5rem;
-}
-
-.stepsHeading {
-    font-family: 'Advent Pro', sans-serif;
-    font-size: 3rem;
-    border-bottom: 1px solid black;
-    border-color: rgba(204, 106, 51, 1);
-    font-weight: 600;
-}
-
-.step {
-    font-size: 2.5rem;
-    font-family: 'Advent Pro', sans-serif;
-    font-weight: 600;
-    color: rgba(204, 106, 51, 1);
-}
-
-.stepText {
-    font-size: 1.8rem;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-}
-
-.texContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.stepsImage {
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-/* Estilos simple steps (max-width: 992px) */
-@media (max-width:992px) {
-    .stepsHeading {
-        margin-bottom: 5rem;
-        text-align: center;
-        margin-bottom: 0rem;
-    }
-
-    .stepsContainer {
-        text-align: center;
-        padding-top: 3rem;
-    }
-
-    .stepText {
-        font-size: 1.5rem;
-    }
-
-}
-
-@media (max-width:576px) {
-    .stepsHeading {
-        font-size: 2.5rem;
-    }
-}
-
-
-
-/* Make an apointment section */
-.appointmentContainer {
-    background-image: url(../images/appointment-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 450px;
-    width: 100%;
-    margin-top: 8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-}
-
-.appointmentHeading {
-    font-family: 'Italiana', serif;
-    font-weight: 600;
+@media (max-width: 1077px) {
+  .heroHeading {
     font-size: 4rem;
-    font-style: italic;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.textHeading {
-    font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.appointmentButton {
-    color: white;
-    background-color: transparent;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
-    border: 1px solid white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
-
-/* Estilos appointment (max-width: 992px) */
-@media (max-width:1200px) {
-    .appointmentContainer {
-        margin-top: 3rem;
-    }
-
-    .stepsSection {
-        padding-bottom: 0rem;
-    }
-}
-
-
-/* Estilos appointment (max-width: 576px) */
-@media (max-width:576px) {
-    .appointmentHeading {
-        font-size: 3.5rem;
-    }
-
-    .textHeading {
-        font-size: 1.4rem;
-    }
-
-    .appointmentButton {
-        font-size: 1.3rem;
-    }
-}
-
-@media (max-width:400px) {
-    .appointmentHeading {
-        font-size: 3rem;
-    }
-
-    .textHeading {
-        font-size: 1.2rem;
-    }
-
-    .appointmentButton {
-        font-size: 1.2rem;
-    }
-}
-
-/* Blog */
-
-.blogHeading {
-    font-family: 'Italiana', serif;
-    font-size: 5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-
-.blogCard {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    padding: 2rem;
-    height: 35rem;
-    width: 25rem;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-}
-
-.blogCard {
-    transition: transform 0.3s;
-    animation-fill-mode: backwards;
-}
-
-.blogCard:hover {
-    transform: scale(1.05);
-}
-
-.cardOne {
-    background-image: url(../images/blog-one.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.cardTwo {
-    background-image: url(../images/blog-two.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.cardThree {
-    background-image: url(../images/blog-three.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.column-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.cardHeading {
-    font-size: 2.5rem;
-    font-family: 'Italiana', serif;
-    font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.cardText {
+  }
+  .heroText {
     font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
 }
-
-.readBtn {
-    border: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.258);
-    color: white;
-    padding: 0.2rem 1rem;
-    font-size: 1.5rem;
-    border-radius: 0;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.readBtn:hover {
-    background-color: white;
-    color: black;
-}
-
-
-
-/* Estilos Blog (max-width: 1400px) */
-@media(max-width:1400px) {
-    .blogCard {
-        margin-bottom: 2rem;
-    }
-}
-
-@media(max-width: 992px) {
-    .mainBlog {
-        padding-bottom: 3rem;
-    }
-}
-
-
-/* Estilos Blog (max-width: 768px) */
-@media(max-width:768px) {
-    .blogHeading {
-        font-size: 4.4rem;
-    }
-
-}
-
-/* Estilos Blog (max-width: 576px) */
-@media(max-width:576px) {
-    .blogHeading {
-        font-size: 4rem;
-    }
-
-    .cardContainer {
-        padding-top: 3rem;
-    }
-
-}
-
-/* FAQs */
-.faqsTextsContainer {
-    margin-bottom: 5rem;
-}
-
-.faqQuestion {
+@media (max-width: 992px) {
+  .contentContainer {
     display: flex;
-    border: 1px solid rgba(204, 106, 51, 1);
-    ;
-    margin-bottom: 1rem;
+    flex-direction: column;
     align-items: center;
-    color: rgba(204, 106, 51, 1);
+  }
+  .heroImage {
+    border-bottom-left-radius: 0rem;
+    box-shadow: none;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .heroHeading {
+    text-align: center;
+  }
+  .heroText {
+    text-align: center;
+  }
+  .heroBtn {
+    padding: 0.7rem 5rem;
+  }
+}
+@media (max-width: 575px) {
+  .heroHeading {
+    padding-top: 3rem;
+  }
+}
+.contactMain {
+  background-color: rgba(255, 208, 182, 0.19);
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+  padding: 3rem;
+}
+.contactMain .imgFormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactMain .contactHeading {
+  color: rgb(204, 106, 51);
+  font-size: 3.5rem;
+  font-family: "Italiana", serif;
+  font-weight: 600;
+}
+.contactMain .contactText {
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: gray;
+}
+.contactMain ::placeholder {
+  color: gray;
+  font-size: 2rem;
+  font-family: "Advent Pro", sans-serif;
+  font-style: italic;
+}
+.contactMain #name:focus::placeholder,
+.contactMain #email:focus::placeholder,
+.contactMain #message:focus::placeholder {
+  color: transparent;
+}
+.contactMain input,
+.contactMain .area {
+  padding: 0.5rem;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0.1rem solid gray;
+  background-color: transparent;
+}
+.contactMain .btnContainer {
+  padding-top: 5rem;
+}
+.contactMain .btnContainer .contactBtn {
+  font-family: "Lato", sans-serif;
+  border-radius: 0.3rem;
+  font-size: 1.3rem;
+  background-color: rgb(204, 106, 51);
+  color: white;
+  border: 1px solid rgb(237, 143, 91);
+  font-weight: 600;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.contactMain .btnContainer .contactBtn:hover {
+  background-color: transparent;
+  color: rgb(204, 106, 51);
 }
 
-.faqQuestion {
-    transition: transform 0.5s ease-in-out;
+.mainBlog {
+  margin-bottom: 6rem;
 }
-
-.faqQuestion:hover {
-    transform: scale(1.2);
-    background-color: rgba(255, 208, 182, 0.19);
-    animation-fill-mode: backwards;
+.mainBlog .blogHeading {
+  font-family: "Italiana", serif;
+  font-size: 5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.mainBlog .blogCard {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  height: 35rem;
+  width: 25rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  transition: transform 0.5s;
+  animation-fill-mode: backwards;
+}
+.mainBlog .blogCard:hover {
+  transform: scale(1.05);
+}
+.mainBlog .blogCard.cardOne {
+  background-image: url(../images/blog-one.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mainBlog .blogCard.cardTwo {
+  background-image: url(../images/blog-two.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mainBlog .blogCard.cardThree {
+  background-image: url(../images/blog-three.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mainBlog .blogCard .column-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mainBlog .blogCard .cardHeading {
+  font-size: 2.5rem;
+  font-family: "Italiana", serif;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.mainBlog .blogCard .cardText {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.mainBlog .blogCard .readBtn {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.258);
+  color: white;
+  padding: 0.2rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.mainBlog .blogCard .readBtn:hover {
+  background-color: white;
+  color: black;
 }
 
 .faqsHeading {
-    font-family: 'Italiana', serif;
-    font-size: 5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Italiana", serif;
+  font-size: 5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.faqText {
-    font-size: 2.4rem;
-    font-family: 'Advent Pro', sans-serif;
-    font-style: italic;
-    padding: 1rem 4rem;
-    font-weight: 600;
+.faqsTextsContainer {
+  margin-bottom: 5rem;
+}
+.faqsTextsContainer .faqQuestion {
+  display: flex;
+  border: 1px solid rgb(204, 106, 51);
+  align-items: center;
+  color: rgb(204, 106, 51);
+  transition: transform 0.5s ease-in-out;
+}
+.faqsTextsContainer .faqQuestion:hover {
+  transform: scale(1.2);
+  background-color: rgba(255, 208, 182, 0.19);
+  animation-fill-mode: backwards;
+}
+.faqsTextsContainer .faqQuestion.faqQuestionOne {
+  --animate-duration: 0.5s;
+}
+.faqsTextsContainer .faqQuestion.faqQuestionTwo {
+  --animate-duration: 1s;
+}
+.faqsTextsContainer .faqQuestion.faqQuestionThree {
+  --animate-duration: 2s;
+}
+.faqsTextsContainer .faqQuestion.faqQuestionFour {
+  --animate-duration: 3s;
+}
+.faqsTextsContainer .faqQuestion.faqQuestionFive {
+  --animate-duration: 4s;
+}
+.faqsTextsContainer .faqQuestion .faqText {
+  font-size: 2.5rem;
+  font-family: "Advent Pro", sans-serif;
+  font-style: italic;
+  padding: 1rem 4rem;
+  font-weight: 600;
+}
+.faqsTextsContainer .faqQuestion .faqArrow {
+  margin-left: 2rem;
+  color: rgb(204, 106, 51);
+  font-size: 2rem;
+}
+.faqsTextsContainer .customLink {
+  color: black;
 }
 
-.faqArrow {
-    margin-left: 2rem;
-    color: rgba(204, 106, 51, 1);
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.customLink {
-    color: black
+main {
+  overflow: hidden;
 }
 
-.faqQuestionOne {
-    --animate-duration: 0.5s;
+.stepsSection {
+  padding-bottom: 5rem;
+}
+.stepsSection .stepsHeading {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 3rem;
+  border-bottom: 1px solid black;
+  border-color: rgb(204, 106, 51);
+  font-weight: 600;
+}
+.stepsSection .stepsContainer {
+  padding-top: 5rem;
+}
+.stepsSection .stepsContainer .stepContent .stepImgContainer .stepsImage {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.stepsSection .stepsContainer .stepContent .texContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.stepsSection .stepsContainer .stepContent .texContainer .stepText {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+.stepsSection .stepsContainer .stepContent .texContainer .step {
+  font-size: 2.5rem;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: 600;
+  color: rgb(204, 106, 51);
 }
 
-.faqQuestionTwo {
-    --animate-duration: 1s;
+@media (max-width: 992px) {
+  .stepsHeading {
+    margin-bottom: 5rem;
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+  .stepsContainer {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .stepText {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .stepsHeading {
+    font-size: 2rem;
+  }
+}
+.treatmentsSection {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.treatmentsSection .treatmentsHeadingContaniner {
+  padding-bottom: 5rem;
+}
+.treatmentsSection .treatmentsHeadingContaniner .treatmentsHeading {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 3rem;
+  border-bottom: 1px solid black;
+  border-color: rgb(204, 106, 51);
+  font-weight: 600;
+}
+.treatmentsSection .treatments {
+  font-family: "Italiana", serif;
+  font-size: 5rem;
+  font-weight: 400;
+}
+.treatmentsSection .treatments .treatment {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease-in-out;
+}
+.treatmentsSection .treatments .treatment:hover {
+  transform: scale(1.2);
+  color: rgb(204, 106, 51);
+}
+.treatmentsSection .treatments .treatment.treatmentTwo {
+  padding-left: 8rem;
+}
+.treatmentsSection .treatments .treatment.treatmentFour {
+  padding-right: 2rem;
 }
 
-.faqQuestionThree {
-    --animate-duration: 2s;
+.appointmentContainer {
+  background-image: url(../images/appointment-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  width: 100%;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
-
-.faqQuestionFour {
-    --animate-duration: 3s;
+.appointmentContainer .appointmentHeading {
+  font-family: "Italiana", serif;
+  font-weight: 600;
+  font-size: 4rem;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
-.faqQuestionFive {
-    --animate-duration: 4s;
+.appointmentContainer .textHeading {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
-/* Estilos Faqs(max-width: 1404px) */
-@media(max-width:1404px) {
-
-    .faqText {
-        font-size: 1.8rem;
-    }
+.appointmentContainer .appointmentButton {
+  color: white;
+  background-color: transparent;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  border: 1px solid white;
+  font-weight: 400;
 }
-
-/* Estilos Faqs(max-width: 1200px) */
-@media(max-width:1200px) {
-    .FaqsHeading {
-        font-size: 5rem;
-    }
-
-    .faqText {
-        font-size: 1.7rem;
-    }
-}
-
-/* Estilos Faqs(max-width: 768px) */
-@media(max-width:768px) {
-    .faqsHeading {
-        font-size: 4.4rem;
-    }
-
-    .faqsContainer {
-        margin-bottom: 0rem;
-    }
-
-    .noMarginFooter {
-        margin-top: 0rem;
-    }
-
-    .faqText {
-        font-size: 2rem;
-    }
-
-    .faqQuestion {
-        transition: none;
-    }
-
-    .faqQuestion:hover {
-        transform: none;
-        background-color: rgba(255, 208, 182, 0.19);
-    }
-}
-
-
-/* Estilos Faqs(max-width: 576px) */
-@media(max-width:576px) {
-    .faqsContainer {
-        margin-bottom: 0rem;
-    }
-
-    .faqsHeading {
-        font-size: 4.4rem;
-    }
-
-    .faqText {
-        font-size: 1.5rem;
-    }
-
-}
-
-
-/* About us */
 
 .aboutHeading {
-    font-family: 'Italiana', serif;
-    font-size: 5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Italiana", serif;
+  font-size: 5rem;
+  text-shadow: 2px 2px 4px solid rgba(0, 0, 0, 0.5);
 }
 
 .aboutContent h2 {
-    font-size: 2.5rem;
-    font-family: 'Advent Pro', sans-serif;
-    font-weight: 600;
-    font-style: italic;
+  font-size: 2.5rem;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: 600;
+  font-style: italic;
 }
-
-.aboutText {
-    font-size: 1.5rem;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-}
-
 .aboutContent hr {
-    border-color: rgba(237, 143, 91, 1);
-    border-width: 0.5rem;
+  border-color: rgb(204, 106, 51);
+  border-width: 0.5rem;
 }
-
-.imgContainer img {
-    width: fit-content;
-}
-
-.imgContainer figcaption {
-    font-family: 'Advent Pro', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
+.aboutContent .aboutText {
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
 }
 
 .imgDiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgDiv .imgContainer img {
+  width: fit-content;
+}
+.imgDiv .imgContainer figcaption {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-/* Estilos about us (max-width:1200px), */
-@media(max-width:1200px) {
-    .aboutHeading {
-        font-size: 5rem;
-    }
-
-    .aboutContent h2 {
-        font-size: 2.3rem;
-        font-weight: 600;
-        text-align: center;
-    }
-
-    .aboutContent p {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .imgContainer figcaption {
-        padding-top: 0.5rem;
-        font-size: 1.4rem;
-    }
-
-}
-
-/* Estilos about us(max-width:768px) */
-@media(max-width:768px) {
-    .aboutHeading {
-        font-size: 4.4rem;
-    }
-}
-
-
-/* Estilos about us(max-width:576px) */
-@media(max-width:576px) {
-    .aboutHeading {
-        font-size: 4rem;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .imgDiv {
-        padding-top: 2rem;
-    }
-}
-
-/* Estilos about us(max-width:400px) */
-@media(max-width:490px) {
-    .aboutContent h2 {
-        font-size: 2rem;
-        font-weight: 600;
-    }
-
-    .aboutContent p {
-        font-size: 1.3rem;
-
-    }
-}
-
-
-/* Contact */
-
-.imgFormContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contactMain {
-    background-color: rgba(255, 208, 182, 0.19);
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.contactHeading {
-    color: rgba(204, 106, 51, 1);
-    font-size: 5.5rem;
-    font-family: 'Italiana', serif;
-    font-weight: 600;
-}
-
-.contactText {
-    font-size: 1.5rem;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    color: gray;
-}
-
-::placeholder {
-    color: gray;
-    font-size: 2rem;
-    font-family: 'Advent Pro', sans-serif;
-    font-style: italic;
-}
-
-#name:focus::placeholder {
-    color: transparent;
-}
-
-#email:focus::placeholder {
-    color: transparent;
-}
-
-#message:focus::placeholder {
-    color: transparent;
-}
-
-input {
-    padding: 0.5rem;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0.1rem solid gray;
-    background-color: transparent;
-}
-
-.area {
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0.1rem solid gray;
-    background-color: transparent;
-}
-
-.contactBtn {
-    font-family: 'Lato', sans-serif;
-    border-radius: 0.3rem;
-    font-size: 1.3rem;
-    background-color: rgba(204, 106, 51, 1);
-    color: white;
-    border: 1px solid rgba(237, 143, 91, 1);
-    color: white;
-    font-weight: 600;
-    letter-spacing: 2px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.btnContainer {
-    padding-top: 5rem;
-}
-
-.contactBtn:hover {
-    background-color: transparent;
-    color: rgba(204, 106, 51, 1);
-}
-
-
-@media(max-width:1348px) {
-    .btnContainer {
-        padding-top: 2rem;
-    }
-
-}
-
-/* Estilos contact (max-width: 1200px) */
-@media(max-width:1200px) {
-    .contactHeading {
-        font-size: 5rem;
-    }
-
-    .contactText {
-        font-size: 1.5rem;
-    }
-
-    ::placeholder {
-        font-size: 1.5rem;
-    }
-
-    .area {
-        padding-top: 0.5rem;
-        padding-bottom: 0;
-    }
-
-    .btnContainer {
-        padding-top: 3rem;
-    }
-
-}
-
-
-/* Estilos contact (max-width: 992px) */
-@media(max-width: 992px) {
-    .contactHeading {
-        font-size: 4rem;
-    }
-
-    .imgForm {
-        display: none;
-    }
-
-    .contactText {
-        font-size: 1.5rem;
-    }
-
-    .area {
-        padding-top: 0.5rem;
-        padding-bottom: 0;
-    }
-
-    .btnContainer {
-        margin-bottom: 7rem;
-    }
-}
-
-/* Estilos Contact (max-width: 768px) */
-@media(max-width:768px) {
-    .contenedorTodo {
-        display: flex;
-        flex-direction: row;
-    }
-}
-
-/* Estilos Contact (max-width: 576px) */
-@media(max-width:576px) {
-    .contactHeading {
-        font-size: 3rem;
-    }
-}
-
-
-/* Footer */
-
-footer {
-    background-color: rgba(255, 208, 182, 0.19);
-    font-family: 'Lato', sans-serif;
-    margin-top: 8.5rem;
-}
-
-.footerHeading {
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.day {
-    font-weight: 600;
-    border-bottom: 1px solid gainsboro;
-}
-
-.hour {
-    font-size: 1rem;
-
-}
-
-.socialMedia {
-    text-decoration: none;
-    padding-right: 0.5rem;
-}
-
-.bi-facebook {
-    color: blue;
-}
-
-.bi-instagram {
-    color: rgb(131, 58, 180);
-}
-
-.bi-youtube {
-    color: red;
-}
-
-@media(max-width:1279px) {
-    .noMarginFooter {
-        margin-top: 0rem;
-    }
-}
+/*# sourceMappingURL=styles.css.map */

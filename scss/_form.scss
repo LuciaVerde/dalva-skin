@@ -1,0 +1,71 @@
+.contactMain {
+    background-color: $color-secondary;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    box-shadow: 8px 8px 15px $color-shadow;
+    padding: 3rem;
+
+    .imgFormContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactHeading {
+        color: $color-primary;
+        font-size: $font-size-xxxlarge;
+        font-family: $font-italiana;
+        font-weight: 600;
+    }
+
+    .contactText {
+        font-size: $font-size-medium;
+        font-family: $font-lato;
+        font-weight: 400;
+        color: $color-gray;
+    }
+
+    ::placeholder {
+        color: $color-gray;
+        font-size: 2rem;
+        font-family: $font-advent-pro;
+        font-style: italic;
+    }
+
+    #name:focus::placeholder,
+    #email:focus::placeholder,
+    #message:focus::placeholder {
+        color: transparent;
+    }
+
+    input,
+    .area {
+        padding: 0.5rem;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0.1rem solid $color-gray;
+        background-color: transparent;
+    }
+
+    .btnContainer {
+        padding-top: 5rem;
+
+        .contactBtn {
+            font-family: $font-lato;
+            border-radius: 0.3rem;
+            font-size: 1.3rem;
+            background-color: $color-primary;
+            color: white;
+            border: 1px solid rgba(237, 143, 91, 1);
+            font-weight: 600;
+            letter-spacing: 2px;
+            box-shadow: 0px 4px 8px $color-shadow;
+
+            &:hover {
+                background-color: transparent;
+                color: $color-primary;
+            }
+        }
+    }
+}

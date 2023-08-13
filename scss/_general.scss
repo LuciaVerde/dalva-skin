@@ -1,0 +1,15 @@
+// Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+// Establecer márgenes y relleno en cero para todos los elementos
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// overflow oculto en main
+main {
+    overflow: hidden;
+}

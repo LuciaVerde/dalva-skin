@@ -1,0 +1,90 @@
+.mainBlog {
+    margin-bottom: $spacing-xxlarge ;
+
+    .blogHeading {
+        font-family: $font-italiana;
+        font-size: $font-size-xxxxlarge;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .blogCard {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $color-white;
+        padding: $spacing-medium;
+        height: 35rem;
+        width: 25rem;
+        box-shadow: $box-shadow;
+        border-radius: $border-radius;
+
+        transition: transform $animate-duration;
+        animation-fill-mode: backwards;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &.cardOne {
+            background-image: url(../images/blog-one.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &.cardTwo {
+            background-image: url(../images/blog-two.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &.cardThree {
+            background-image: url(../images/blog-three.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .column-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cardHeading {
+            font-size: $font-size-xlarge;
+            font-family: $font-italiana;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .cardText {
+            font-size: $font-size-medium;
+            font-family: $font-roboto;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .readBtn {
+            border: 1px solid $color-white;
+            background-color: rgba(255, 255, 255, 0.258);
+            color: $color-white;
+            padding: 0.2rem 1rem;
+            font-size: $font-size-medium;
+            border-radius: 0;
+            box-shadow: $box-shadow;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+            &:hover {
+                background-color: $color-white;
+                color: black;
+            }
+        }
+    }
+
+}

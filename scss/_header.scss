@@ -1,0 +1,46 @@
+//estilos - header
+header {
+    font-family: $font-advent-pro;
+    border-bottom: 2px solid $color-primary;
+    font-weight: 400;
+
+    // logo
+    .logo {
+        height: 60px;
+        width: 84px;
+    }
+
+    // navbar - li 
+    li {
+        font-size: $font-size-xxlarge;
+        padding-right: $spacing-medium;
+
+        // navbar - a 
+        .nav-link {
+            text-decoration: none;
+            font-size: $font-size-large;
+            padding-right: $spacing-medium;
+            color: $color-black;
+
+            // navbar - nav-link :hover 
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    // estilos - botón 
+    .styleBtn {
+        border: 1px solid $color-primary;
+        background-color: transparent;
+        color: $color-primary;
+        padding: 0.5rem 1.5rem;
+        font-size: 20px;
+        border-radius: 6px;
+
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white;
+        }
+    }
+}
