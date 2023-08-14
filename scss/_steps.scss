@@ -2,11 +2,15 @@
     padding-bottom: $spacing-xlarge;
 
     .stepsHeading {
-        font-family: $font-advent-pro;
+        font-family: $font-advent;
         font-size: $font-size-xxlarge;
         border-bottom: 1px solid black;
         border-color: $color-primary;
         font-weight: 600;
+
+        @media (max-width: 576px) {
+            font-size: 2.5rem;
+        }
     }
 
     .stepsContainer {
@@ -15,7 +19,7 @@
         .stepContent {
             .stepImgContainer {
                 .stepsImage {
-                    box-shadow: $box-shadow;
+                    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
                 }
             }
 
@@ -28,38 +32,46 @@
                     font-size: $font-size-large;
                     font-family: $font-lato;
                     font-weight: 400;
+
+                    @media (max-width: 1400px) {
+                        font-size: 1.9rem;
+                    }
+                    @media (max-width: 1140px) {
+                        font-size: 1.7rem;
+                    }
+
+                    @media (max-width: 992px) {
+                        font-size: 1.5rem;
+                    }
                 }
 
                 .step {
                     font-size: $font-size-xlarge;
-                    font-family: $font-advent-pro;
+                    font-family: $font-advent;
                     font-weight: 600;
                     color: $color-primary;
+
+                    @media (max-width: 992px) {
+                        font-size: 2.3rem;
+                    }
+                    @media (max-width: 400px) {
+                        font-size: 2rem;
+                    }
                 }
             }
         }
     }
-}
 
-@media (max-width: 992px) {
-    .stepsHeading {
-        margin-bottom: $spacing-xlarge;
-        text-align: center;
-        margin-bottom: 0rem;
-    }
+    @media (max-width: 992px) {
+        .stepsHeading {
+            margin-bottom: 5rem;
+            text-align: center;
+            margin-bottom: 0rem;
+        }
 
-    .stepsContainer {
-        text-align: center;
-        padding-top: $spacing-medium;
-    }
-
-    .stepText {
-        font-size: $font-size-medium;
-    }
-}
-
-@media (max-width: 576px) {
-    .stepsHeading {
-        font-size: $font-size-large;
+        .stepsContainer {
+            text-align: center;
+            padding-top: 3rem;
+        }
     }
 }

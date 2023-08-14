@@ -1,11 +1,21 @@
-.mainBlog {
-    margin-bottom: $spacing-xxlarge ;
 
-    .blogHeading {
-        font-family: $font-italiana;
-        font-size: $font-size-xxxxlarge;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.blogHeading {
+    font-family: $font-italiana;
+    font-size: $font-size-xxxxxlarge;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    @media (max-width: 768px) {
+        font-size: 4.4rem;
     }
+
+    @media (max-width: 576px) {
+        font-size: 4rem;
+    }
+}
+
+.cardsContainer {
+    padding-bottom: $spacing-xlarge;
+
 
     .blogCard {
         background-repeat: no-repeat;
@@ -16,14 +26,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: $color-white;
-        padding: $spacing-medium;
+        color: white;
+        padding: $spacing-large;
         height: 35rem;
         width: 25rem;
-        box-shadow: $box-shadow;
-        border-radius: $border-radius;
-
-        transition: transform $animate-duration;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 0.3rem;
+        transition: transform 0.3s;
         animation-fill-mode: backwards;
 
         &:hover {
@@ -57,34 +66,62 @@
         }
 
         .cardHeading {
-            font-size: $font-size-xlarge;
+            font-size: 2.5rem;
             font-family: $font-italiana;
             font-weight: 600;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .cardText {
-            font-size: $font-size-medium;
-            font-family: $font-roboto;
+            font-size: $font-size-small;
+            font-family: $font-lato;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .readBtn {
+            font-family: $font-lato;
             border: 1px solid $color-white;
             background-color: rgba(255, 255, 255, 0.258);
             color: $color-white;
             padding: 0.2rem 1rem;
-            font-size: $font-size-medium;
+            font-size: 1.5rem;
             border-radius: 0;
-            box-shadow: $box-shadow;
-            font-weight: 600;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 400;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
             &:hover {
                 background-color: $color-white;
-                color: black;
+                color: $color-black;
             }
         }
     }
 
+    @media (max-width: 1400px) {
+        .blogCard {
+            margin-bottom: 2rem;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .mainBlog {
+            padding-bottom: 3rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .blogHeading {
+            font-size: 4.4rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .blogHeading {
+            font-size: 4rem;
+        }
+
+        .cardContainer {
+            padding-top: 3rem;
+        }
+    }
 }

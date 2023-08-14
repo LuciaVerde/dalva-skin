@@ -6,9 +6,9 @@
         padding-bottom: $spacing-xlarge;
 
         .treatmentsHeading {
-            font-family: $font-advent-pro;
+            font-family: $font-advent;
             font-size: $font-size-xxlarge;
-            border-bottom: 1px solid $color-black;
+            border-bottom: 1px solid black;
             border-color: $color-primary;
             font-weight: 600;
         }
@@ -16,25 +16,103 @@
 
     .treatments {
         font-family: $font-italiana;
-        font-size: $font-size-xxxxlarge;
+        font-size: $font-size-xxxxxlarge;
         font-weight: 400;
 
         .treatment {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            transition: transform $animate-duration ease-in-out;
+            transition: transform 0.5s ease-in-out;
 
             &:hover {
                 transform: scale(1.2);
                 color: $color-primary;
             }
+        }
 
-            &.treatmentTwo {
-                padding-left: $spacing-xxxlarge;
+        .treatmentTwo {
+            padding-left: 9rem;
+        }
+
+        .treatmentFour {
+            padding-right: 25rem;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .treatments {
+            font-size: $font-size-xxxxxlarge;
+
+            .treatmentFour {
+                padding-right: 18rem;
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        padding-bottom: $spacing-small;
+
+        .treatments {
+            font-size: 3.8rem;
+
+            .treatment {
+                transition: none;
             }
 
-            &.treatmentFour {
-                padding-right: $spacing-large;
+            .treatment:hover {
+                transform: none;
             }
+        }
+
+        .treatmentsHeadingContaniner {
+            padding-bottom: 3rem;
+
+            .treatmentsHeading {
+                text-align: center;
+            }
+        }
+
+        .treatmentsSection {
+            text-align: center;
+
+            .treatmentsHeadingContaniner {
+                padding-bottom: 3rem;
+
+                .treatmentFour {
+                    padding-right: 0;
+                }
+
+                .treatmentTwo {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 760px) {
+        .treatmentsSection {
+            padding-top: 3rem;
+        }
+    }
+
+    @media (max-width: 674px) {
+        .treatments {
+            font-size: $font-size-xlarge;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .treatmentsHeading {
+            font-size: $font-size-xlarge;
+        }
+
+        .treatments {
+            font-size: $font-size-xxxlarge;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .treatments {
+            font-size: $font-size-xlarge;
         }
     }
 }

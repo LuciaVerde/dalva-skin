@@ -11,13 +11,11 @@ header .logo {
   width: 84px;
 }
 header li {
-  font-size: 3rem;
   padding-right: 1rem;
 }
 header li .nav-link {
   text-decoration: none;
-  font-size: 2rem;
-  padding-right: 1rem;
+  font-size: 1.6rem;
   color: black;
 }
 header li .nav-link:hover {
@@ -28,8 +26,9 @@ header .styleBtn {
   background-color: transparent;
   color: rgb(204, 106, 51);
   padding: 0.5rem 1.5rem;
-  font-size: 20px;
+  font-size: 1.2rem;
   border-radius: 6px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 header .styleBtn:hover {
   background-color: rgb(204, 106, 51);
@@ -41,15 +40,15 @@ footer {
   font-family: "Lato", sans-serif;
 }
 footer .footerHeading {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 footer .day {
   font-weight: 600;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid gainsboro;
 }
 footer .hour {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 footer .socialMedia {
   text-decoration: none;
@@ -73,18 +72,20 @@ footer .rights {
 .heroSection {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.heroContainer {
+.heroSection .heroContainer {
   background-color: rgb(249, 220, 193);
 }
-
-.contentContainer {
+.heroSection .heroContainer .contentContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-.heroHeading {
+@media (max-width: 992px) {
+  .heroSection .heroContainer .contentContainer {
+    align-items: center;
+  }
+}
+.heroSection .heroContainer .contentContainer .heroHeading {
   font-family: "Italiana", serif;
   font-size: 8rem;
   color: rgb(204, 106, 51);
@@ -92,15 +93,57 @@ footer .rights {
   --animate-duration: 1.5s;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
-.heroText {
+@media (max-width: 1650px) {
+  .heroSection .heroContainer .contentContainer .heroHeading {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 1460px) {
+  .heroSection .heroContainer .contentContainer .heroHeading {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 1270px) {
+  .heroSection .heroContainer .contentContainer .heroHeading {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 1077px) {
+  .heroSection .heroContainer .contentContainer .heroHeading {
+    font-size: 4rem;
+  }
+}
+.heroSection .heroContainer .contentContainer .heroText {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
   color: rgb(204, 106, 51);
   --animate-duration: 1.7s;
 }
-
-.heroBtn {
+@media (max-width: 1650px) {
+  .heroSection .heroContainer .contentContainer .heroText {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1460px) {
+  .heroSection .heroContainer .contentContainer .heroText {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1270px) {
+  .heroSection .heroContainer .contentContainer .heroText {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 1077px) {
+  .heroSection .heroContainer .contentContainer .heroText {
+    font-size: 1.2rem;
+  }
+}
+.heroSection .heroContainer .contentContainer .heroBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-family: "Lato", sans-serif;
   padding: 0.7rem 10rem;
   font-size: 1.1rem;
@@ -112,51 +155,24 @@ footer .rights {
   --animate-duration: 1.9s;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.heroImage {
+@media (max-width: 767px) {
+  .heroSection .heroContainer .contentContainer .heroBtn {
+    padding: 0.7rem 5rem;
+  }
+}
+.heroSection .heroContainer .contentContainer .heroBtn .heroBtnArrow {
+  font-size: 1.5rem;
+}
+.heroSection .heroContainer .contentContainer .heroBtn:hover {
+  background-color: rgb(204, 106, 51);
+  color: #fff;
+}
+.heroSection .heroContainer .heroImage {
   border-bottom-left-radius: 45rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-@media (max-width: 1650px) {
-  .heroHeading {
-    font-size: 7rem;
-  }
-  .heroText {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 1460px) {
-  .heroHeading {
-    font-size: 6rem;
-  }
-  .heroText {
-    font-size: 1.4rem;
-  }
-}
-@media (max-width: 1270px) {
-  .heroHeading {
-    font-size: 5rem;
-  }
-  .heroText {
-    font-size: 1.3rem;
-  }
-}
-@media (max-width: 1077px) {
-  .heroHeading {
-    font-size: 4rem;
-  }
-  .heroText {
-    font-size: 1.2rem;
-  }
-}
 @media (max-width: 992px) {
-  .contentContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .heroImage {
+  .heroSection .heroContainer .heroImage {
     border-bottom-left-radius: 0rem;
     box-shadow: none;
     padding-top: 3rem;
@@ -164,27 +180,24 @@ footer .rights {
   }
 }
 @media (max-width: 767px) {
-  .heroHeading {
+  .heroSection .heroHeading,
+  .heroSection .heroText {
     text-align: center;
-  }
-  .heroText {
-    text-align: center;
-  }
-  .heroBtn {
-    padding: 0.7rem 5rem;
   }
 }
 @media (max-width: 575px) {
-  .heroHeading {
+  .heroSection .heroHeading {
     padding-top: 3rem;
   }
 }
+
 .contactMain {
   background-color: rgba(255, 208, 182, 0.19);
   margin-top: 5rem;
   margin-bottom: 5rem;
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
-  padding: 3rem;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  border-radius: 1rem;
 }
 .contactMain .imgFormContainer {
   display: flex;
@@ -193,9 +206,24 @@ footer .rights {
 }
 .contactMain .contactHeading {
   color: rgb(204, 106, 51);
-  font-size: 3.5rem;
+  font-size: 5.5rem;
   font-family: "Italiana", serif;
   font-weight: 600;
+}
+@media (max-width: 1200px) {
+  .contactMain .contactHeading {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 992px) {
+  .contactMain .contactHeading {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 576px) {
+  .contactMain .contactHeading {
+    font-size: 3rem;
+  }
 }
 .contactMain .contactText {
   font-size: 1.5rem;
@@ -203,11 +231,31 @@ footer .rights {
   font-weight: 400;
   color: gray;
 }
+@media (max-width: 1200px) {
+  .contactMain .contactText {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 992px) {
+  .contactMain .contactText {
+    font-size: 1.5rem;
+  }
+}
 .contactMain ::placeholder {
   color: gray;
   font-size: 2rem;
-  font-family: "Advent Pro", sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: italic;
+}
+@media (max-width: 1200px) {
+  .contactMain ::placeholder {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 992px) {
+  .contactMain ::placeholder {
+    font-size: 1.5rem;
+  }
 }
 .contactMain #name:focus::placeholder,
 .contactMain #email:focus::placeholder,
@@ -223,8 +271,24 @@ footer .rights {
   border-bottom: 0.1rem solid gray;
   background-color: transparent;
 }
+@media (max-width: 576px) {
+  .contactMain input,
+  .contactMain .area {
+    padding: 0.5rem;
+  }
+}
 .contactMain .btnContainer {
   padding-top: 5rem;
+}
+@media (max-width: 1348px) {
+  .contactMain .btnContainer {
+    padding-top: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .contactMain .btnContainer {
+    padding-bottom: 2rem;
+  }
 }
 .contactMain .btnContainer .contactBtn {
   font-family: "Lato", sans-serif;
@@ -232,25 +296,46 @@ footer .rights {
   font-size: 1.3rem;
   background-color: rgb(204, 106, 51);
   color: white;
-  border: 1px solid rgb(237, 143, 91);
+  border: 1px solid rgb(204, 106, 51);
   font-weight: 600;
   letter-spacing: 2px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .contactMain .btnContainer .contactBtn:hover {
   background-color: transparent;
   color: rgb(204, 106, 51);
 }
-
-.mainBlog {
-  margin-bottom: 6rem;
+@media (max-width: 576px) {
+  .contactMain .btnContainer .contactBtn {
+    font-size: 1.2rem;
+  }
 }
-.mainBlog .blogHeading {
+@media (max-width: 992px) {
+  .contactMain .imgForm {
+    display: none;
+  }
+}
+
+.blogHeading {
   font-family: "Italiana", serif;
   font-size: 5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.mainBlog .blogCard {
+@media (max-width: 768px) {
+  .blogHeading {
+    font-size: 4.4rem;
+  }
+}
+@media (max-width: 576px) {
+  .blogHeading {
+    font-size: 4rem;
+  }
+}
+
+.cardsContainer {
+  padding-bottom: 5rem;
+}
+.cardsContainer .blogCard {
   background-repeat: no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
@@ -260,64 +345,88 @@ footer .rights {
   justify-content: center;
   align-items: center;
   color: white;
-  padding: 1rem;
+  padding: 2rem;
   height: 35rem;
   width: 25rem;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-  transition: transform 0.5s;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  transition: transform 0.3s;
   animation-fill-mode: backwards;
 }
-.mainBlog .blogCard:hover {
+.cardsContainer .blogCard:hover {
   transform: scale(1.05);
 }
-.mainBlog .blogCard.cardOne {
+.cardsContainer .blogCard.cardOne {
   background-image: url(../images/blog-one.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.mainBlog .blogCard.cardTwo {
+.cardsContainer .blogCard.cardTwo {
   background-image: url(../images/blog-two.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.mainBlog .blogCard.cardThree {
+.cardsContainer .blogCard.cardThree {
   background-image: url(../images/blog-three.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.mainBlog .blogCard .column-content {
+.cardsContainer .blogCard .column-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.mainBlog .blogCard .cardHeading {
+.cardsContainer .blogCard .cardHeading {
   font-size: 2.5rem;
   font-family: "Italiana", serif;
   font-weight: 600;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.mainBlog .blogCard .cardText {
-  font-size: 1.5rem;
-  font-family: "Roboto", sans-serif;
+.cardsContainer .blogCard .cardText {
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.mainBlog .blogCard .readBtn {
+.cardsContainer .blogCard .readBtn {
+  font-family: "Lato", sans-serif;
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.258);
   color: white;
   padding: 0.2rem 1rem;
   font-size: 1.5rem;
   border-radius: 0;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  font-weight: 600;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 400;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.mainBlog .blogCard .readBtn:hover {
+.cardsContainer .blogCard .readBtn:hover {
   background-color: white;
   color: black;
+}
+@media (max-width: 1400px) {
+  .cardsContainer .blogCard {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .cardsContainer .mainBlog {
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .cardsContainer .blogHeading {
+    font-size: 4.4rem;
+  }
+}
+@media (max-width: 576px) {
+  .cardsContainer .blogHeading {
+    font-size: 4rem;
+  }
+  .cardsContainer .cardContainer {
+    padding-top: 3rem;
+  }
 }
 
 .faqsHeading {
@@ -325,16 +434,38 @@ footer .rights {
   font-size: 5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 768px) {
+  .faqsHeading {
+    font-size: 4.4rem;
+  }
+}
+@media (max-width: 576px) {
+  .faqsHeading {
+    font-size: 4.4rem;
+  }
+}
 
 .faqsTextsContainer {
   margin-bottom: 5rem;
 }
+@media (max-width: 768px) {
+  .faqsTextsContainer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
 .faqsTextsContainer .faqQuestion {
-  display: flex;
   border: 1px solid rgb(204, 106, 51);
+  display: flex;
   align-items: center;
+  justify-content: center;
   color: rgb(204, 106, 51);
   transition: transform 0.5s ease-in-out;
+}
+@media (max-width: 768px) {
+  .faqsTextsContainer .faqQuestion {
+    transform: none;
+  }
 }
 .faqsTextsContainer .faqQuestion:hover {
   transform: scale(1.2);
@@ -363,22 +494,31 @@ footer .rights {
   padding: 1rem 4rem;
   font-weight: 600;
 }
+@media (max-width: 1404px) {
+  .faqsTextsContainer .faqQuestion .faqText {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1200px) {
+  .faqsTextsContainer .faqQuestion .faqText {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 576px) {
+  .faqsTextsContainer .faqQuestion .faqText {
+    font-size: 1.5rem;
+  }
+}
 .faqsTextsContainer .faqQuestion .faqArrow {
   margin-left: 2rem;
   color: rgb(204, 106, 51);
   font-size: 2rem;
 }
-.faqsTextsContainer .customLink {
-  color: black;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-main {
-  overflow: hidden;
+@media (max-width: 576px) {
+  .faqsTextsContainer .faqQuestion .faqArrow {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
 }
 
 .stepsSection {
@@ -391,11 +531,16 @@ main {
   border-color: rgb(204, 106, 51);
   font-weight: 600;
 }
+@media (max-width: 576px) {
+  .stepsSection .stepsHeading {
+    font-size: 2.5rem;
+  }
+}
 .stepsSection .stepsContainer {
   padding-top: 5rem;
 }
 .stepsSection .stepsContainer .stepContent .stepImgContainer .stepsImage {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .stepsSection .stepsContainer .stepContent .texContainer {
   display: flex;
@@ -407,32 +552,49 @@ main {
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
+@media (max-width: 1400px) {
+  .stepsSection .stepsContainer .stepContent .texContainer .stepText {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 1140px) {
+  .stepsSection .stepsContainer .stepContent .texContainer .stepText {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 992px) {
+  .stepsSection .stepsContainer .stepContent .texContainer .stepText {
+    font-size: 1.5rem;
+  }
+}
 .stepsSection .stepsContainer .stepContent .texContainer .step {
   font-size: 2.5rem;
   font-family: "Advent Pro", sans-serif;
   font-weight: 600;
   color: rgb(204, 106, 51);
 }
-
 @media (max-width: 992px) {
-  .stepsHeading {
+  .stepsSection .stepsContainer .stepContent .texContainer .step {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 400px) {
+  .stepsSection .stepsContainer .stepContent .texContainer .step {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .stepsSection .stepsHeading {
     margin-bottom: 5rem;
     text-align: center;
     margin-bottom: 0rem;
   }
-  .stepsContainer {
+  .stepsSection .stepsContainer {
     text-align: center;
-    padding-top: 1rem;
-  }
-  .stepText {
-    font-size: 1.5rem;
+    padding-top: 3rem;
   }
 }
-@media (max-width: 576px) {
-  .stepsHeading {
-    font-size: 2rem;
-  }
-}
+
 .treatmentsSection {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -460,11 +622,74 @@ main {
   transform: scale(1.2);
   color: rgb(204, 106, 51);
 }
-.treatmentsSection .treatments .treatment.treatmentTwo {
-  padding-left: 8rem;
+.treatmentsSection .treatments .treatmentTwo {
+  padding-left: 9rem;
 }
-.treatmentsSection .treatments .treatment.treatmentFour {
-  padding-right: 2rem;
+.treatmentsSection .treatments .treatmentFour {
+  padding-right: 25rem;
+}
+@media (max-width: 1200px) {
+  .treatmentsSection .treatments {
+    font-size: 5rem;
+  }
+  .treatmentsSection .treatments .treatmentFour {
+    padding-right: 18rem;
+  }
+}
+@media (max-width: 992px) {
+  .treatmentsSection {
+    padding-bottom: 0.5rem;
+  }
+  .treatmentsSection .treatments {
+    font-size: 3.8rem;
+  }
+  .treatmentsSection .treatments .treatment {
+    transition: none;
+  }
+  .treatmentsSection .treatments .treatment:hover {
+    transform: none;
+  }
+  .treatmentsSection .treatmentsHeadingContaniner {
+    padding-bottom: 3rem;
+  }
+  .treatmentsSection .treatmentsHeadingContaniner .treatmentsHeading {
+    text-align: center;
+  }
+  .treatmentsSection .treatmentsSection {
+    text-align: center;
+  }
+  .treatmentsSection .treatmentsSection .treatmentsHeadingContaniner {
+    padding-bottom: 3rem;
+  }
+  .treatmentsSection .treatmentsSection .treatmentsHeadingContaniner .treatmentFour {
+    padding-right: 0;
+  }
+  .treatmentsSection .treatmentsSection .treatmentsHeadingContaniner .treatmentTwo {
+    padding-left: 0;
+  }
+}
+@media (max-width: 760px) {
+  .treatmentsSection .treatmentsSection {
+    padding-top: 3rem;
+  }
+}
+@media (max-width: 674px) {
+  .treatmentsSection .treatments {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .treatmentsSection .treatmentsHeading {
+    font-size: 2.5rem;
+  }
+  .treatmentsSection .treatments {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .treatmentsSection .treatments {
+    font-size: 2.5rem;
+  }
 }
 
 .appointmentContainer {
@@ -487,11 +712,31 @@ main {
   font-style: italic;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 576px) {
+  .appointmentContainer .appointmentHeading {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .appointmentContainer .appointmentHeading {
+    font-size: 3rem;
+  }
+}
 .appointmentContainer .textHeading {
   font-size: 1.5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 576px) {
+  .appointmentContainer .textHeading {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 400px) {
+  .appointmentContainer .textHeading {
+    font-size: 1.2rem;
+  }
 }
 .appointmentContainer .appointmentButton {
   color: white;
@@ -500,12 +745,60 @@ main {
   font-size: 1.5rem;
   border: 1px solid white;
   font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.appointmentContainer .appointmentButton:hover {
+  background-color: white;
+  color: black;
+}
+@media (max-width: 576px) {
+  .appointmentContainer .appointmentButton {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 400px) {
+  .appointmentContainer .appointmentButton {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .appointmentContainer {
+    margin-top: 3rem;
+  }
+  .stepsSection {
+    padding-bottom: 3rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  overflow: hidden;
 }
 
 .aboutHeading {
   font-family: "Italiana", serif;
   font-size: 5rem;
-  text-shadow: 2px 2px 4px solid rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+  .aboutHeading {
+    font-size: 4.4rem;
+  }
+}
+@media (max-width: 576px) {
+  .aboutHeading {
+    font-size: 4rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .aboutContent h2 {
@@ -514,14 +807,53 @@ main {
   font-weight: 600;
   font-style: italic;
 }
-.aboutContent hr {
-  border-color: rgb(204, 106, 51);
-  border-width: 0.5rem;
+@media (max-width: 1200px) {
+  .aboutContent h2 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+@media (max-width: 490px) {
+  .aboutContent h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
 }
 .aboutContent .aboutText {
   font-size: 1.5rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
+}
+@media (max-width: 1200px) {
+  .aboutContent .aboutText {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 490px) {
+  .aboutContent .aboutText {
+    font-size: 1.3rem;
+  }
+}
+.aboutContent hr {
+  border-color: rgb(237, 143, 91);
+  border-width: 0.5rem;
+}
+
+.imgContainer img {
+  width: fit-content;
+}
+.imgContainer figcaption {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+@media (max-width: 1200px) {
+  .imgContainer figcaption {
+    padding-top: 0.5rem;
+    font-size: 1.4rem;
+  }
 }
 
 .imgDiv {
@@ -529,13 +861,10 @@ main {
   align-items: center;
   justify-content: center;
 }
-.imgDiv .imgContainer img {
-  width: fit-content;
-}
-.imgDiv .imgContainer figcaption {
-  font-family: "Advent Pro", sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
+@media (max-width: 576px) {
+  .imgDiv {
+    padding-top: 2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

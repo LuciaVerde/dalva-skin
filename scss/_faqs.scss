@@ -1,18 +1,36 @@
 .faqsHeading {
     font-family: $font-italiana;
-    font-size: $font-size-xxxxlarge;
-    text-shadow: 2px 2px 4px $color-shadow;
+    font-size: $font-size-xxxxxlarge;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    @media (max-width: 768px) {
+        font-size: 4.4rem;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 4.4rem;
+    }
 }
 
 .faqsTextsContainer {
     margin-bottom: $spacing-xlarge;
+    @media (max-width: 768px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 
     .faqQuestion {
-        display: flex;
         border: 1px solid $color-primary;
+        display: flex;
         align-items: center;
+        justify-content: center;
         color: $color-primary;
         transition: transform 0.5s ease-in-out;
+
+
+        @media (max-width: 768px) {
+            transform: none;
+        }
 
         &:hover {
             transform: scale(1.2);
@@ -42,23 +60,34 @@
 
         .faqText {
             font-size: $font-size-xlarge;
-            font-family: $font-advent-pro;
+            font-family: $font-advent;
             font-style: italic;
-            padding: 1rem 4rem;
+            padding: $spacing-medium $font-size-xxxxlarge;
             font-weight: 600;
+
+            @media (max-width: 1404px) {
+                font-size: 1.8rem;
+            }
+
+            @media (max-width: 1200px) {
+                font-size: 1.7rem;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 1.5rem;
+                
+            }
         }
+
         .faqArrow {
-            margin-left: 2rem;
+            margin-left: $spacing-large;
             color: $color-primary;
             font-size: $font-size-large;
+
+            @media (max-width: 576px) {
+                font-size: 1.5rem;
+                margin-left: 0;
+            }
         }
-    }
-
-   
-
-    
-
-    .customLink {
-        color: black;
     }
 }

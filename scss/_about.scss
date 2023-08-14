@@ -1,0 +1,84 @@
+.aboutHeading {
+    font-family: 'Italiana', serif;
+    font-size: 5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    @media (max-width: 768px) {
+        font-size: 4.4rem;
+    }
+
+    @media (max-width: 576px) {
+        font-size: 4rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.aboutContent {
+    h2 {
+        font-size: 2.5rem;
+        font-family: 'Advent Pro', sans-serif;
+        font-weight: 600;
+        font-style: italic;
+
+        @media (max-width: 1200px) {
+            font-size: 2.3rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        @media (max-width: 490px) {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+
+    .aboutText {
+        font-size: 1.5rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+
+        @media (max-width: 1200px) {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        @media (max-width: 490px) {
+            font-size: 1.3rem;
+        }
+    }
+
+    hr {
+        border-color: rgba(237, 143, 91, 1);
+        border-width: 0.5rem;
+    }
+}
+
+.imgContainer {
+    img {
+        width: fit-content;
+    }
+
+    figcaption {
+        font-family: 'Advent Pro', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        @media (max-width: 1200px) {
+            padding-top: 0.5rem;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.imgDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 576px) {
+        padding-top: 2rem;
+    }
+}
+
+

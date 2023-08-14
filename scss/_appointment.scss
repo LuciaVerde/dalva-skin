@@ -14,16 +14,32 @@
     .appointmentHeading {
         font-family: $font-italiana;
         font-weight: 600;
-        font-size: 4rem;
+        font-size: $font-size-xxxxlarge;
         font-style: italic;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+        @media (max-width: 576px) {
+            font-size: 3.5rem;
+        }
+
+        @media (max-width: 400px) {
+            font-size: 3rem;
+        }
     }
 
     .textHeading {
         font-size: $font-size-medium;
-        font-family: $font-roboto;
+        font-family: $font-lato;
         font-weight: 400;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+        @media (max-width: 576px) {
+            font-size: 1.4rem;
+        }
+
+        @media (max-width: 400px) {
+            font-size: 1.2rem;
+        }
     }
 
     .appointmentButton {
@@ -33,5 +49,33 @@
         font-size: $font-size-medium;
         border: 1px solid $color-white;
         font-weight: 400;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-black;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 1.3rem;
+        }
+
+        @media (max-width: 400px) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .appointmentContainer {
+        margin-top: 3rem;
+    }
+
+    .stepsSection {
+        padding-bottom: 3rem;
     }
 }

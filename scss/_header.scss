@@ -1,6 +1,6 @@
 //estilos - header
 header {
-    font-family: $font-advent-pro;
+    font-family:$font-advent;
     border-bottom: 2px solid $color-primary;
     font-weight: 400;
 
@@ -12,14 +12,12 @@ header {
 
     // navbar - li 
     li {
-        font-size: $font-size-xxlarge;
         padding-right: $spacing-medium;
 
         // navbar - a 
         .nav-link {
             text-decoration: none;
-            font-size: $font-size-large;
-            padding-right: $spacing-medium;
+            font-size: 1.6rem;
             color: $color-black;
 
             // navbar - nav-link :hover 
@@ -34,9 +32,10 @@ header {
         border: 1px solid $color-primary;
         background-color: transparent;
         color: $color-primary;
-        padding: 0.5rem 1.5rem;
-        font-size: 20px;
+        padding: $spacing-small 1.5rem;
+        font-size: $font-size-small;
         border-radius: 6px;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
         &:hover {
             background-color: $color-primary;
@@ -44,3 +43,5 @@ header {
         }
     }
 }
+
+

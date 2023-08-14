@@ -1,26 +1,25 @@
-// Estilos generales del footer
 footer {
     background-color: $color-secondary;
     font-family: $font-lato;
 
-    // Estilos - encabezado del footer
+    //footer heading
     .footerHeading {
-        font-size: $font-size-small;
+        font-size: $font-size-xs;
         font-weight: 600;
     }
 
-    // Estilos - día
+    //día
     .day {
         font-weight: 600;
-        border-bottom: $border-width solid $color-gray;
+        border-bottom: 1px solid gainsboro;
     }
 
-    // Estilos - horario
+    //horario
     .hour {
-        font-size: $font-size-small;
+        font-size: $font-size-xs;
     }
 
-    // Estilos - enlaces de redes sociales
+    //enlaces de redes sociales
     .socialMedia {
         text-decoration: none;
         padding-right: $spacing-small;
@@ -28,21 +27,20 @@ footer {
         font-size: $font-size-medium;
     }
 
-    // Estilos - Facebook
+    //facebook
     .bi-facebook {
         color: $color-blue; // Asegúrate de tener una variable $color-blue definida
     }
 
-    // Estilos - Instagram
+    //instagram
     .bi-instagram {
-        color: rgb(131, 58, 180);
+        color: $color-violet;
     }
 
-    // Estilos - YouTube
+    //youtube
     .bi-youtube {
         color: $color-red; // Asegúrate de tener una variable $color-red definida
     }
-
     .rights{
         font-family: $font-lato;
     }

@@ -1,9 +1,10 @@
 .contactMain {
     background-color: $color-secondary;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    box-shadow: 8px 8px 15px $color-shadow;
-    padding: 3rem;
+    margin-top: $spacing-xlarge;
+    margin-bottom: $spacing-xlarge;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    border-radius: 1rem;
 
     .imgFormContainer {
         display: flex;
@@ -13,9 +14,21 @@
 
     .contactHeading {
         color: $color-primary;
-        font-size: $font-size-xxxlarge;
+        font-size: 5.5rem;
         font-family: $font-italiana;
         font-weight: 600;
+
+        @media (max-width: 1200px) {
+            font-size: 5rem;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 4rem;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 3rem;
+        }
     }
 
     .contactText {
@@ -23,13 +36,29 @@
         font-family: $font-lato;
         font-weight: 400;
         color: $color-gray;
+
+        @media (max-width: 1200px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 1.5rem;
+        }
     }
 
     ::placeholder {
         color: $color-gray;
-        font-size: 2rem;
-        font-family: $font-advent-pro;
+        font-size: $font-size-large;
+        font-family: $font-lato;
         font-style: italic;
+
+        @media (max-width: 1200px) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 1.5rem;
+        }
     }
 
     #name:focus::placeholder,
@@ -40,16 +69,28 @@
 
     input,
     .area {
-        padding: 0.5rem;
+        padding: $spacing-small;
         border-top: 0;
         border-left: 0;
         border-right: 0;
         border-bottom: 0.1rem solid $color-gray;
         background-color: transparent;
+
+        @media (max-width: 576px) {
+            padding: $spacing-small;
+        }
     }
 
     .btnContainer {
-        padding-top: 5rem;
+        padding-top: $spacing-xlarge;
+
+        @media (max-width: 1348px) {
+            padding-top: 2rem;
+        }
+
+        @media (max-width: 992px) {
+            padding-bottom: 2rem;
+        }
 
         .contactBtn {
             font-family: $font-lato;
@@ -57,15 +98,25 @@
             font-size: 1.3rem;
             background-color: $color-primary;
             color: white;
-            border: 1px solid rgba(237, 143, 91, 1);
+            border: 1px solid $color-primary;
             font-weight: 600;
             letter-spacing: 2px;
-            box-shadow: 0px 4px 8px $color-shadow;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
             &:hover {
                 background-color: transparent;
                 color: $color-primary;
             }
+
+            @media (max-width: 576px) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    
+    .imgForm {
+        @media (max-width: 992px) {
+            display: none;
         }
     }
 }
