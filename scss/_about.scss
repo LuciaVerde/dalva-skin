@@ -1,7 +1,5 @@
 .aboutHeading {
-    font-family: 'Italiana', serif;
-    font-size: 5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    @include flex-center-center;
 
     @media (max-width: 768px) {
         font-size: 4.4rem;
@@ -17,7 +15,7 @@
 .aboutContent {
     h2 {
         font-size: 2.5rem;
-        font-family: 'Advent Pro', sans-serif;
+        font-family: $font-italiana;
         font-weight: 600;
         font-style: italic;
 
@@ -34,12 +32,12 @@
     }
 
     .aboutText {
-        font-size: 1.5rem;
-        font-family: 'Lato', sans-serif;
+        font-size: $font-size-medium;
+        font-family: $font-lato;
         font-weight: 400;
 
         @media (max-width: 1200px) {
-            font-size: 1.5rem;
+            font-size: $font-size-medium;
             text-align: center;
         }
 
@@ -49,7 +47,7 @@
     }
 
     hr {
-        border-color: rgba(237, 143, 91, 1);
+        border-color: $color-primary;
         border-width: 0.5rem;
     }
 }
@@ -60,8 +58,8 @@
     }
 
     figcaption {
-        font-family: 'Advent Pro', sans-serif;
-        font-size: 1.5rem;
+        font-family: $font-advent;
+        font-size: $font-size-medium;
         font-weight: 600;
 
         @media (max-width: 1200px) {
