@@ -1,15 +1,13 @@
 .contactMain {
     background-color: $color-secondary;
-    margin-top: $spacing-xlarge;
-    margin-bottom: $spacing-xlarge;
+    margin-top: $spacing-xxl;
+    margin-bottom: $spacing-xxl;
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
     padding: 0;
     border-radius: 1rem;
 
     .imgFormContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center-center;
     }
 
     .contactHeading {
@@ -19,15 +17,15 @@
         font-weight: 600;
 
         @media (max-width: 1200px) {
-            font-size: 5rem;
+            font-size: $font-size-xxxlarge;
         }
 
         @media (max-width: 992px) {
-            font-size: 4rem;
+            font-size: $spacing-xl;
         }
 
         @media (max-width: 576px) {
-            font-size: 3rem;
+            font-size: $font-size-xlarge;
         }
     }
 
@@ -38,11 +36,11 @@
         color: $color-gray;
 
         @media (max-width: 1200px) {
-            font-size: 1.5rem;
+            font-size: $font-size-medium;
         }
 
         @media (max-width: 992px) {
-            font-size: 1.5rem;
+            font-size: $font-size-medium;
         }
     }
 
@@ -53,11 +51,11 @@
         font-style: italic;
 
         @media (max-width: 1200px) {
-            font-size: 1.5rem;
+            font-size: $font-size-medium;
         }
 
         @media (max-width: 992px) {
-            font-size: 1.5rem;
+            font-size: $font-size-medium;
         }
     }
 
@@ -69,7 +67,7 @@
 
     input,
     .area {
-        padding: $spacing-small;
+        padding: 0.5rem;
         border-top: 0;
         border-left: 0;
         border-right: 0;
@@ -77,19 +75,19 @@
         background-color: transparent;
 
         @media (max-width: 576px) {
-            padding: $spacing-small;
+            padding: $spacing-md;
         }
     }
 
     .btnContainer {
-        padding-top: $spacing-xlarge;
+        padding-top: $spacing-xxl;
 
         @media (max-width: 1348px) {
-            padding-top: 2rem;
+            padding-top: $spacing-md;
         }
 
         @media (max-width: 992px) {
-            padding-bottom: 2rem;
+            padding-bottom: $spacing-md;
         }
 
         .contactBtn {

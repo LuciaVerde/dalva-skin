@@ -1,12 +1,8 @@
 .stepsSection {
-    padding-bottom: $spacing-xlarge;
+    padding-bottom: $spacing-xl;
 
     .stepsHeading {
-        font-family: $font-advent;
-        font-size: $font-size-xxlarge;
-        border-bottom: 1px solid black;
-        border-color: $color-primary;
-        font-weight: 600;
+        @include headings-h2;
 
         @media (max-width: 576px) {
             font-size: 2.5rem;
@@ -14,7 +10,7 @@
     }
 
     .stepsContainer {
-        padding-top: $spacing-xlarge;
+        padding-top: $spacing-xl;
 
         .stepContent {
             .stepImgContainer {
@@ -29,12 +25,12 @@
                 justify-content: center;
 
                 .stepText {
-                    font-size: $font-size-large;
+                    font-size: 1.8rem;
                     font-family: $font-lato;
                     font-weight: 400;
 
                     @media (max-width: 1400px) {
-                        font-size: 1.9rem;
+                        font-size: 1.7rem;
                     }
                     @media (max-width: 1140px) {
                         font-size: 1.7rem;
@@ -46,10 +42,7 @@
                 }
 
                 .step {
-                    font-size: $font-size-xlarge;
-                    font-family: $font-advent;
-                    font-weight: 600;
-                    color: $color-primary;
+                    @include headings-h3;
 
                     @media (max-width: 992px) {
                         font-size: 2.3rem;
@@ -64,9 +57,7 @@
 
     @media (max-width: 992px) {
         .stepsHeading {
-            margin-bottom: 5rem;
-            text-align: center;
-            margin-bottom: 0rem;
+            @include media-992-headings-h2;
         }
 
         .stepsContainer {

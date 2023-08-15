@@ -1,14 +1,56 @@
-//mixins
+// Centra elementos con flexbox
 @mixin flex-center-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin hedings {
+// Estilos para encabezados h1
+@mixin headings-h1 {
   font-family: $font-italiana;
-  font-size: $font-size-xxxxxlarge;
+  font-size: $font-size-xxxlarge;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+// Estilos para encabezados h2
+@mixin headings-h2 {
+  font-family: $font-advent;
+  font-size: $font-size-xlarge;
+  border-bottom: 1px solid black;
+  border-color: $color-primary;
+  font-weight: 600;
+}
 
+// Estilos para encabezados h3
+@mixin headings-h3 {
+  font-size: 2.5rem;
+  font-family: $font-advent;
+  font-weight: 600;
+  color: $color-primary;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+// Establece el fondo con tamaño de cubierta y sin repetición
+@mixin cover-no-repeat {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+// Estilos para encabezados h2 en una media query de max 992px
+@mixin media-992-headings-h2 {
+  margin-bottom: $spacing-xxl;
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+// Estilos para encabezados h1 en una media query de max 576px
+@mixin media-576-headings-h1 {
+  font-size: $font-size-xxlarge;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Estilos para encabezados h1 en una media query de max 768px
+@mixin media-768-headings-h1 {
+  font-size: 4.4rem;
+}

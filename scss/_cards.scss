@@ -1,33 +1,26 @@
-
 .blogHeading {
-    font-family: $font-italiana;
-    font-size: $font-size-xxxxxlarge;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    @include headings-h1;
 
     @media (max-width: 768px) {
-        font-size: 4.4rem;
+        @include media-768-headings-h1;
     }
 
     @media (max-width: 576px) {
-        font-size: 4rem;
+        @include media-576-headings-h1;
     }
 }
 
 .cardsContainer {
-    padding-bottom: $spacing-xlarge;
+    padding-bottom: $spacing-xl;
 
 
     .blogCard {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include flex-center-center;
+        @include cover-no-repeat;
         background-position: center center;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         color: white;
-        padding: $spacing-large;
+        padding: $spacing-md;
         height: 35rem;
         width: 25rem;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
@@ -41,27 +34,22 @@
 
         &.cardOne {
             background-image: url(../images/blog-one.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
+            @include cover-no-repeat;
         }
 
         &.cardTwo {
             background-image: url(../images/blog-two.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
+            @include cover-no-repeat;
         }
 
         &.cardThree {
             background-image: url(../images/blog-three.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
+            @include cover-no-repeat;
         }
 
         .column-content {
-            display: flex;
+            @include flex-center-center;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             text-align: center;
         }
 
@@ -83,8 +71,8 @@
             border: 1px solid $color-white;
             background-color: rgba(255, 255, 255, 0.258);
             color: $color-white;
-            padding: 0.2rem 1rem;
-            font-size: 1.5rem;
+            padding: 0.2rem $spacing-xs;
+            font-size: $font-size-medium;
             border-radius: 0;
             box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             font-weight: 400;
@@ -99,13 +87,13 @@
 
     @media (max-width: 1400px) {
         .blogCard {
-            margin-bottom: 2rem;
+            margin-bottom: $spacing-md;
         }
     }
 
     @media (max-width: 992px) {
         .mainBlog {
-            padding-bottom: 3rem;
+            padding-bottom: $spacing-lg;
         }
     }
 
@@ -117,11 +105,11 @@
 
     @media (max-width: 576px) {
         .blogHeading {
-            font-size: 4rem;
+            font-size: $font-size-xxlarge;
         }
 
         .cardContainer {
-            padding-top: 3rem;
+            padding-top: $spacing-lg;
         }
     }
 }

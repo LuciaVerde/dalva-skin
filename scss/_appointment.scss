@@ -1,20 +1,17 @@
 .appointmentContainer {
+    @include flex-center-center;
+    @include cover-no-repeat;
     background-image: url(../images/appointment-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 450px;
+    height:28.125rem;
     width: 100%;
-    margin-top: $spacing-xxxlarge;
-    display: flex;
+    margin-top: 8rem;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: $color-white;
 
     .appointmentHeading {
         font-family: $font-italiana;
         font-weight: 600;
-        font-size: $font-size-xxxxlarge;
+        font-size: $font-size-xxlarge;
         font-style: italic;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
@@ -23,12 +20,12 @@
         }
 
         @media (max-width: 400px) {
-            font-size: 3rem;
+            font-size: $font-size-xlarge;
         }
     }
 
     .textHeading {
-        font-size: $font-size-medium;
+        font-size: $font-size-large;
         font-family: $font-lato;
         font-weight: 400;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -43,16 +40,14 @@
     }
 
     .appointmentButton {
+        @include flex-center-center;
         color: $color-white;
         background-color: transparent;
         font-family: $font-lato;
         font-size: $font-size-medium;
         border: 1px solid $color-white;
         font-weight: 400;
-        display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
         &:hover {
@@ -72,10 +67,6 @@
 
 @media (max-width: 1200px) {
     .appointmentContainer {
-        margin-top: 3rem;
-    }
-
-    .stepsSection {
-        padding-bottom: 3rem;
+        margin-top: $spacing-lg;
     }
 }

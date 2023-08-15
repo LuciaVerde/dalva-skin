@@ -3,6 +3,7 @@
 
     .heroContainer {
         background-color: $color-primary-light;
+        
 
         .contentContainer {
             display: flex;
@@ -10,8 +11,10 @@
             justify-content: center;
 
             @media(max-width:992px) {
+                display: flex;
                 align-items: center;
             }
+            
 
             .heroHeading {
                 font-family: $font-italiana;
@@ -30,11 +33,11 @@
                 }
 
                 @media(max-width:1270px) {
-                    font-size: 5rem;
+                    font-size: $font-size-xxxlarge;
                 }
 
                 @media(max-width:1077px) {
-                    font-size: 4rem;
+                    font-size: $font-size-xxlarge;
                 }
             }
 
@@ -45,7 +48,7 @@
                 --animate-duration: 1.7s;
 
                 @media (max-width:1650px) {
-                    font-size: 1.5rem;
+                    font-size: $font-size-medium;
                 }
 
                 @media(max-width:1460px) {
@@ -62,10 +65,8 @@
             }
 
             .heroBtn {
-                display: flex;
+                @include flex-center-center;
                 flex-direction: row;
-                justify-content: center;
-                align-items: center;
                 font-family: $font-lato;
                 padding: 0.7rem 10rem;
                 font-size: 1.1rem;
@@ -82,7 +83,7 @@
                 }
 
                 .heroBtnArrow {
-                    font-size: 1.5rem;
+                    font-size: $font-size-medium;
                 }
 
                 &:hover {

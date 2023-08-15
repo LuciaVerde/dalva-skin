@@ -4,7 +4,7 @@ footer {
 
     //footer heading
     .footerHeading {
-        font-size: $font-size-xs;
+        font-size: $font-size-small;
         font-weight: 600;
     }
 
@@ -16,13 +16,13 @@ footer {
 
     //horario
     .hour {
-        font-size: $font-size-xs;
+        font-size: $font-size-small;
     }
 
     //enlaces de redes sociales
     .socialMedia {
         text-decoration: none;
-        padding-right: $spacing-small;
+        padding-right: $spacing-sm;
         color: $color-primary;
         font-size: $font-size-medium;
     }

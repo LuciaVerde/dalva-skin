@@ -7,11 +7,11 @@ header {
   font-weight: 400;
 }
 header .logo {
-  height: 60px;
-  width: 84px;
+  height: 3.75rem;
+  width: 5.25rem;
 }
 header li {
-  padding-right: 1rem;
+  padding-right: 1.25rem;
 }
 header li .nav-link {
   text-decoration: none;
@@ -26,8 +26,8 @@ header .styleBtn {
   background-color: transparent;
   color: rgb(204, 106, 51);
   padding: 0.5rem 1.5rem;
-  font-size: 1.2rem;
-  border-radius: 6px;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 header .styleBtn:hover {
@@ -52,7 +52,7 @@ footer .hour {
 }
 footer .socialMedia {
   text-decoration: none;
-  padding-right: 0.5rem;
+  padding-right: 1.5rem;
   color: rgb(204, 106, 51);
   font-size: 1.5rem;
 }
@@ -82,6 +82,7 @@ footer .rights {
 }
 @media (max-width: 992px) {
   .heroSection .heroContainer .contentContainer {
+    display: flex;
     align-items: center;
   }
 }
@@ -141,9 +142,9 @@ footer .rights {
 }
 .heroSection .heroContainer .contentContainer .heroBtn {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   font-family: "Lato", sans-serif;
   padding: 0.7rem 10rem;
   font-size: 1.1rem;
@@ -274,7 +275,7 @@ footer .rights {
 @media (max-width: 576px) {
   .contactMain input,
   .contactMain .area {
-    padding: 0.5rem;
+    padding: 2rem;
   }
 }
 .contactMain .btnContainer {
@@ -329,21 +330,22 @@ footer .rights {
 @media (max-width: 576px) {
   .blogHeading {
     font-size: 4rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .cardsContainer {
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 .cardsContainer .blogCard {
-  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: white;
   padding: 2rem;
   height: 35rem;
@@ -373,9 +375,9 @@ footer .rights {
 }
 .cardsContainer .blogCard .column-content {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 .cardsContainer .blogCard .cardHeading {
@@ -385,7 +387,7 @@ footer .rights {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .cardsContainer .blogCard .cardText {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Lato", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -441,7 +443,9 @@ footer .rights {
 }
 @media (max-width: 576px) {
   .faqsHeading {
-    font-size: 4.4rem;
+    font-size: 4rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -455,10 +459,10 @@ footer .rights {
   }
 }
 .faqsTextsContainer .faqQuestion {
-  border: 1px solid rgb(204, 106, 51);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(204, 106, 51);
   color: rgb(204, 106, 51);
   transition: transform 0.5s ease-in-out;
 }
@@ -488,7 +492,7 @@ footer .rights {
   --animate-duration: 4s;
 }
 .faqsTextsContainer .faqQuestion .faqText {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-family: "Advent Pro", sans-serif;
   font-style: italic;
   padding: 1rem 4rem;
@@ -522,7 +526,7 @@ footer .rights {
 }
 
 .stepsSection {
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 .stepsSection .stepsHeading {
   font-family: "Advent Pro", sans-serif;
@@ -537,7 +541,7 @@ footer .rights {
   }
 }
 .stepsSection .stepsContainer {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 .stepsSection .stepsContainer .stepContent .stepImgContainer .stepsImage {
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
@@ -548,13 +552,13 @@ footer .rights {
   justify-content: center;
 }
 .stepsSection .stepsContainer .stepContent .texContainer .stepText {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
 @media (max-width: 1400px) {
   .stepsSection .stepsContainer .stepContent .texContainer .stepText {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
   }
 }
 @media (max-width: 1140px) {
@@ -572,6 +576,7 @@ footer .rights {
   font-family: "Advent Pro", sans-serif;
   font-weight: 600;
   color: rgb(204, 106, 51);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 992px) {
   .stepsSection .stepsContainer .stepContent .texContainer .step {
@@ -599,78 +604,60 @@ footer .rights {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+@media (max-width: 992px) {
+  .treatmentsSection {
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 760px) {
+  .treatmentsSection {
+    padding-bottom: 3rem;
+  }
+}
 .treatmentsSection .treatmentsHeadingContaniner {
   padding-bottom: 5rem;
 }
+@media (max-width: 992px) {
+  .treatmentsSection .treatmentsHeadingContaniner {
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 760px) {
+  .treatmentsSection .treatmentsHeadingContaniner {
+    padding-bottom: 3rem;
+  }
+}
 .treatmentsSection .treatmentsHeadingContaniner .treatmentsHeading {
-  font-family: "Advent Pro", sans-serif;
+  font-family: "Advent Pro", sans-serif, sans-serif;
   font-size: 3rem;
   border-bottom: 1px solid black;
   border-color: rgb(204, 106, 51);
   font-weight: 600;
 }
+@media (max-width: 992px) {
+  .treatmentsSection .treatmentsHeadingContaniner .treatmentsHeading {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .treatmentsSection .treatmentsHeadingContaniner .treatmentsHeading {
+    font-size: 2.5rem;
+  }
+}
 .treatmentsSection .treatments {
-  font-family: "Italiana", serif;
+  font-family: "Italiana", serif, serif;
   font-size: 5rem;
   font-weight: 400;
-}
-.treatmentsSection .treatments .treatment {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  transition: transform 0.5s ease-in-out;
-}
-.treatmentsSection .treatments .treatment:hover {
-  transform: scale(1.2);
-  color: rgb(204, 106, 51);
-}
-.treatmentsSection .treatments .treatmentTwo {
-  padding-left: 9rem;
-}
-.treatmentsSection .treatments .treatmentFour {
-  padding-right: 25rem;
 }
 @media (max-width: 1200px) {
   .treatmentsSection .treatments {
     font-size: 5rem;
   }
-  .treatmentsSection .treatments .treatmentFour {
-    padding-right: 18rem;
-  }
 }
 @media (max-width: 992px) {
-  .treatmentsSection {
-    padding-bottom: 0.5rem;
-  }
   .treatmentsSection .treatments {
     font-size: 3.8rem;
-  }
-  .treatmentsSection .treatments .treatment {
-    transition: none;
-  }
-  .treatmentsSection .treatments .treatment:hover {
-    transform: none;
-  }
-  .treatmentsSection .treatmentsHeadingContaniner {
-    padding-bottom: 3rem;
-  }
-  .treatmentsSection .treatmentsHeadingContaniner .treatmentsHeading {
     text-align: center;
-  }
-  .treatmentsSection .treatmentsSection {
-    text-align: center;
-  }
-  .treatmentsSection .treatmentsSection .treatmentsHeadingContaniner {
-    padding-bottom: 3rem;
-  }
-  .treatmentsSection .treatmentsSection .treatmentsHeadingContaniner .treatmentFour {
-    padding-right: 0;
-  }
-  .treatmentsSection .treatmentsSection .treatmentsHeadingContaniner .treatmentTwo {
-    padding-left: 0;
-  }
-}
-@media (max-width: 760px) {
-  .treatmentsSection .treatmentsSection {
-    padding-top: 3rem;
   }
 }
 @media (max-width: 674px) {
@@ -679,30 +666,63 @@ footer .rights {
   }
 }
 @media (max-width: 576px) {
-  .treatmentsSection .treatmentsHeading {
-    font-size: 2.5rem;
-  }
   .treatmentsSection .treatments {
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 400px) {
   .treatmentsSection .treatments {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+.treatmentsSection .treatments .treatment {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease-in-out;
+}
+@media (max-width: 992px) {
+  .treatmentsSection .treatments .treatment {
+    transition: none;
+  }
+}
+.treatmentsSection .treatments .treatment:hover {
+  transform: scale(1.2);
+  color: rgb(204, 106, 51);
+}
+@media (max-width: 992px) {
+  .treatmentsSection .treatments .treatment:hover {
+    transform: none;
+    color: rgb(204, 106, 51);
+  }
+}
+.treatmentsSection .treatments .treatmentTwo {
+  padding-left: 5rem;
+}
+@media (max-width: 760px) {
+  .treatmentsSection .treatments .treatmentTwo {
+    padding-left: 0;
+  }
+}
+.treatmentsSection .treatments .treatmentFour {
+  padding-right: 5rem;
+  padding-right: 0;
+}
+@media (max-width: 760px) {
+  .treatmentsSection .treatments .treatmentFour {
+    padding-left: 0;
   }
 }
 
 .appointmentContainer {
-  background-image: url(../images/appointment-img.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 450px;
-  width: 100%;
-  margin-top: 8rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/appointment-img.jpg);
+  height: 28.125rem;
+  width: 100%;
+  margin-top: 8rem;
+  flex-direction: column;
   color: white;
 }
 .appointmentContainer .appointmentHeading {
@@ -723,7 +743,7 @@ footer .rights {
   }
 }
 .appointmentContainer .textHeading {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -739,16 +759,16 @@ footer .rights {
   }
 }
 .appointmentContainer .appointmentButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   background-color: transparent;
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
   border: 1px solid white;
   font-weight: 400;
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .appointmentContainer .appointmentButton:hover {
@@ -769,9 +789,6 @@ footer .rights {
 @media (max-width: 1200px) {
   .appointmentContainer {
     margin-top: 3rem;
-  }
-  .stepsSection {
-    padding-bottom: 3rem;
   }
 }
 * {
@@ -858,8 +875,8 @@ main {
 
 .imgDiv {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 @media (max-width: 576px) {
   .imgDiv {

@@ -1,16 +1,12 @@
 .aboutHeading {
-    font-family: $font-italiana;
-    font-size: $font-size-xxxxxlarge;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    @include headings-h1;
 
     @media (max-width: 768px) {
-        font-size: 4.4rem;
+        @include media-768-headings-h1;
     }
 
     @media (max-width: 576px) {
-        font-size: 4rem;
-        padding-left: 0;
-        padding-right: 0;
+       @include media-576-headings-h1;
     }
 }
 
@@ -28,7 +24,7 @@
         }
 
         @media (max-width: 490px) {
-            font-size: 2rem;
+            font-size:$font-size-large;
             font-weight: 600;
         }
     }
@@ -72,12 +68,10 @@
 }
 
 .imgDiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center-center;
 
     @media (max-width: 576px) {
-        padding-top: 2rem;
+        padding-top: $font-size-large;
     }
 }
 
