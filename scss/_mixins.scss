@@ -1,6 +1,14 @@
 //mixins
 @mixin flex-center-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin hedings {
+  font-family: $font-italiana;
+  font-size: $font-size-xxxxxlarge;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
