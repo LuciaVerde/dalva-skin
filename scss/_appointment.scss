@@ -2,7 +2,7 @@
     @include flex-center-center;
     @include cover-no-repeat;
     background-image: url(../images/appointment-img.jpg);
-    height:28.125rem;
+    height: 28.125rem;
     width: 100%;
     margin-top: 8rem;
     flex-direction: column;
@@ -25,8 +25,8 @@
     }
 
     .textHeading {
-        font-size: $font-size-large;
-        font-family: $font-lato;
+        font-size: $font-size-medium;
+        font-family: $font-montserrat;
         font-weight: 400;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
@@ -42,9 +42,9 @@
     .appointmentButton {
         @include flex-center-center;
         color: $color-white;
-        background-color: transparent;
-        font-family: $font-lato;
-        font-size: $font-size-medium;
+        background-color: rgba(255, 255, 255, 0.1);
+        font-family: $font-montserrat;
+        font-size: 1.3rem;
         border: 1px solid $color-white;
         font-weight: 400;
         flex-direction: row;

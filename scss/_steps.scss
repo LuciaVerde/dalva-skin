@@ -25,13 +25,14 @@
                 justify-content: center;
 
                 .stepText {
-                    font-size: 1.8rem;
-                    font-family: $font-lato;
+                    font-size: 1.7rem;
+                    font-family: $font-montserrat;
                     font-weight: 400;
 
                     @media (max-width: 1400px) {
                         font-size: 1.7rem;
                     }
+
                     @media (max-width: 1140px) {
                         font-size: 1.7rem;
                     }
@@ -47,6 +48,7 @@
                     @media (max-width: 992px) {
                         font-size: 2.3rem;
                     }
+
                     @media (max-width: 400px) {
                         font-size: 2rem;
                     }

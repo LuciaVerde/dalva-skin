@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 header {
   font-family: "Advent Pro", sans-serif;
   border-bottom: 2px solid rgb(204, 106, 51);
@@ -9,9 +10,6 @@ header {
 header .logo {
   height: 3.75rem;
   width: 5.25rem;
-}
-header li {
-  padding-right: 1.25rem;
 }
 header li .nav-link {
   text-decoration: none;
@@ -25,7 +23,7 @@ header .styleBtn {
   border: 1px solid rgb(204, 106, 51);
   background-color: transparent;
   color: rgb(204, 106, 51);
-  padding: 0.5rem 1.5rem;
+  padding: 0.2rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -37,9 +35,13 @@ header .styleBtn:hover {
 
 footer {
   background-color: rgba(255, 208, 182, 0.19);
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-footer .footerHeading {
+footer .fa-solid {
+  color: black;
+  padding-right: 0.5rem;
+}
+footer .bold {
   font-size: 1rem;
   font-weight: 600;
 }
@@ -50,23 +52,21 @@ footer .day {
 footer .hour {
   font-size: 1rem;
 }
-footer .socialMedia {
+footer .social-container {
+  margin: 1rem 0;
+}
+footer .social-container a {
+  border: none;
+  background-color: rgb(204, 106, 51);
+  color: white;
   text-decoration: none;
-  padding-right: 1.5rem;
-  color: rgb(204, 106, 51);
-  font-size: 1.5rem;
-}
-footer .bi-facebook {
-  color: blue;
-}
-footer .bi-instagram {
-  color: rgb(131, 58, 180);
-}
-footer .bi-youtube {
-  color: red;
-}
-footer .rights {
-  font-family: "Lato", sans-serif;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.3rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 .heroSection {
@@ -115,8 +115,8 @@ footer .rights {
   }
 }
 .heroSection .heroContainer .contentContainer .heroText {
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
   color: rgb(204, 106, 51);
   --animate-duration: 1.7s;
 }
@@ -140,12 +140,15 @@ footer .rights {
     font-size: 1.2rem;
   }
 }
-.heroSection .heroContainer .contentContainer .heroBtn {
+.heroSection .heroContainer .contentContainer a {
+  text-decoration: none;
+}
+.heroSection .heroContainer .contentContainer a .heroBtn {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0.7rem 10rem;
   font-size: 1.1rem;
   border-radius: 0.2rem;
@@ -155,16 +158,21 @@ footer .rights {
   color: rgb(204, 106, 51);
   --animate-duration: 1.9s;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.heroSection .heroContainer .contentContainer a .heroBtn:hover {
+  background-color: rgb(204, 106, 51);
+  color: white;
 }
 @media (max-width: 767px) {
-  .heroSection .heroContainer .contentContainer .heroBtn {
+  .heroSection .heroContainer .contentContainer a .heroBtn {
     padding: 0.7rem 5rem;
   }
 }
-.heroSection .heroContainer .contentContainer .heroBtn .heroBtnArrow {
+.heroSection .heroContainer .contentContainer a .heroBtn .heroBtnArrow {
   font-size: 1.5rem;
 }
-.heroSection .heroContainer .contentContainer .heroBtn:hover {
+.heroSection .heroContainer .contentContainer a .heroBtn:hover {
   background-color: rgb(204, 106, 51);
   color: #fff;
 }
@@ -199,6 +207,7 @@ footer .rights {
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
   padding: 0;
   border-radius: 1rem;
+  max-height: 40rem;
 }
 .contactMain .imgFormContainer {
   display: flex;
@@ -207,7 +216,7 @@ footer .rights {
 }
 .contactMain .contactHeading {
   color: rgb(204, 106, 51);
-  font-size: 5.5rem;
+  font-size: 4rem;
   font-family: "Italiana", serif;
   font-weight: 600;
 }
@@ -227,8 +236,8 @@ footer .rights {
   }
 }
 .contactMain .contactText {
-  font-size: 1.5rem;
-  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: gray;
 }
@@ -244,8 +253,8 @@ footer .rights {
 }
 .contactMain ::placeholder {
   color: gray;
-  font-size: 2rem;
-  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
 }
 @media (max-width: 1200px) {
@@ -292,18 +301,18 @@ footer .rights {
   }
 }
 .contactMain .btnContainer .contactBtn {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   border-radius: 0.3rem;
   font-size: 1.3rem;
   background-color: rgb(204, 106, 51);
   color: white;
   border: 1px solid rgb(204, 106, 51);
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 2px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .contactMain .btnContainer .contactBtn:hover {
-  background-color: transparent;
+  background-color: white;
   color: rgb(204, 106, 51);
 }
 @media (max-width: 576px) {
@@ -388,16 +397,16 @@ footer .rights {
 }
 .cardsContainer .blogCard .cardText {
   font-size: 1rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .cardsContainer .blogCard .readBtn {
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.258);
   color: white;
-  padding: 0.2rem 1rem;
-  font-size: 1.5rem;
+  padding: 0.2rem 3rem;
+  font-size: 1.2rem;
   border-radius: 0;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: 400;
@@ -472,7 +481,7 @@ footer .rights {
   }
 }
 .faqsTextsContainer .faqQuestion:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   background-color: rgba(255, 208, 182, 0.19);
   animation-fill-mode: backwards;
 }
@@ -492,11 +501,12 @@ footer .rights {
   --animate-duration: 4s;
 }
 .faqsTextsContainer .faqQuestion .faqText {
-  font-size: 2.4rem;
-  font-family: "Advent Pro", sans-serif;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
-  padding: 1rem 4rem;
-  font-weight: 600;
+  padding: 2rem 4rem;
+  font-weight: 400;
+  margin: 0;
 }
 @media (max-width: 1404px) {
   .faqsTextsContainer .faqQuestion .faqText {
@@ -513,13 +523,13 @@ footer .rights {
     font-size: 1.5rem;
   }
 }
-.faqsTextsContainer .faqQuestion .faqArrow {
+.faqsTextsContainer .faqQuestion .fa-solid {
   margin-left: 2rem;
   color: rgb(204, 106, 51);
   font-size: 2rem;
 }
 @media (max-width: 576px) {
-  .faqsTextsContainer .faqQuestion .faqArrow {
+  .faqsTextsContainer .faqQuestion .fa-solid {
     font-size: 1.5rem;
     margin-left: 0;
   }
@@ -552,8 +562,8 @@ footer .rights {
   justify-content: center;
 }
 .stepsSection .stepsContainer .stepContent .texContainer .stepText {
-  font-size: 1.8rem;
-  font-family: "Lato", sans-serif;
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 @media (max-width: 1400px) {
@@ -743,8 +753,8 @@ footer .rights {
   }
 }
 .appointmentContainer .textHeading {
-  font-size: 2rem;
-  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -763,9 +773,9 @@ footer .rights {
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: transparent;
-  font-family: "Lato", sans-serif;
-  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
   border: 1px solid white;
   font-weight: 400;
   flex-direction: row;
@@ -839,7 +849,7 @@ main {
 }
 .aboutContent .aboutText {
   font-size: 1.5rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 @media (max-width: 1200px) {
@@ -862,8 +872,8 @@ main {
   width: fit-content;
 }
 .imgContainer figcaption {
-  font-family: "Advent Pro", sans-serif;
-  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
   font-weight: 600;
 }
 @media (max-width: 1200px) {
@@ -882,6 +892,97 @@ main {
   .imgDiv {
     padding-top: 2rem;
   }
+}
+
+body .formSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/appointment-img-blur.jpg);
+  background-position: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+body .formSection .formContainer {
+  background-color: white;
+  border-radius: 0.625rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  width: 30rem;
+  max-width: 100%;
+  min-height: 35rem;
+}
+body .formSection .formContainer .signInForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  flex-direction: column;
+  padding: 0 3.125rem;
+  height: 100%;
+  text-align: center;
+  border-radius: 5rem;
+}
+body .formSection .formContainer .signInForm .signInHeading {
+  font-family: "Italiana", serif;
+  font-weight: bold;
+  margin: 0;
+  color: rgb(204, 106, 51);
+  font-size: 3rem;
+}
+body .formSection .formContainer .signInForm .social-container {
+  margin: 1.25rem 0;
+}
+body .formSection .formContainer .signInForm .social-container a {
+  border: 1px solid #DDDDDD;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.313rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  transition: transform 0.3s;
+}
+body .formSection .formContainer .signInForm .social-container a:hover {
+  transform: scale(1.1);
+}
+body .formSection .formContainer .signInForm input {
+  background-color: #eee;
+  border: none;
+  padding: 0.75rem 0.938rem;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+body .formSection .formContainer .signInForm a {
+  color: #333;
+  font-size: 1rem;
+  text-decoration: none;
+  margin: 0.938rem 0;
+}
+body .formSection .formContainer .signInForm a span {
+  color: rgb(204, 106, 51);
+  text-decoration: underline rgb(204, 106, 51);
+}
+body .formSection .formContainer .signInForm .signButton {
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(204, 106, 51);
+  background-color: rgb(204, 106, 51);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.75rem 2.813rem;
+  letter-spacing: 0.1rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+body .formSection .formContainer .signInForm .signButton:hover {
+  background-color: white;
+  color: rgb(204, 106, 51);
+  border-color: rgb(204, 106, 51);
 }
 
 /*# sourceMappingURL=styles.css.map */

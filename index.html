@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Transform Your Beauty: Discover Expert Cosmetology Services at Our Clinic - Unveil Your Radiance Today!">
+    <meta name="description"
+        content="Transform Your Beauty: Discover Expert Cosmetology Services at Our Clinic - Unveil Your Radiance Today!">
     <meta name="keywords" content=" SKINCARE, BEAUTY, ANTI-AGING,TREATMENT,HEALTH">
-    <title>Dalva Skin | Home</title>
+    <title> Dalva Skin | Home | Your Path to Radiant Beauty Starts at Here </title>
     <link rel="shortcut icon" href="./images/dalva-favicon.png" type="image/x-icon">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- iconos -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/4f35de3737.js" crossorigin="anonymous"></script>
     <!-- animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- aos -->
@@ -22,20 +23,20 @@
 </head>
 
 <body>
-    <!-- header -->
-    <header class="container-fluid navbar navbar-expand-lg px-2 animate__animated animate__fadeIn">
+     <!-- header -->
+     <header class="container-fluid navbar navbar-expand-lg px-2 animate__animated animate__fadeIn">
         <div class="container text-center">
-            <a class="navbar-brand" href="index.html">
-                <img class="logo" src="images/dalva-logo.jpg" alt="Logo of Dalva skin">
+            <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="../images/dalva-logo.jpg" alt="Logo of Dalva skin">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="collapse navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="index.html">Home</a>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="./html/blog.html">Blog</a>
@@ -50,7 +51,7 @@
                         <a class="nav-link" href="./html/contact.html">Contact</a>
                     </li>
                 </ul>
-                <a class="pt-1" href="#">
+                <a class="pt-1" href="./html/login.html">
                     <button type="button" class="btn styleBtn" id="nav">Log In</button>
                 </a>
             </nav>
@@ -60,23 +61,26 @@
     <main>
         <!-- hero section -->
         <section class="container-fluid heroSection px-0">
-                <div class="row heroContainer px-0 mx-0 pt-lg-0 pt-sm-5">
-                    <div class="col-lg-6 col-md-12 text-lg-start text-md-center ps-lg-5 contentContainer">
-                        <h1 class="heroHeading animate__animated animate__fadeInUp">Healthy skin is beautiful skin</h1>
-                        <p class="heroText py-4 animate__animated animate__fadeInUp">We enhance the beauty of your skin,
-                            cultivating its healthy glow
-                            through conscious care and quality products.</p>
-                        <button class="heroBtn col-lg-4 col-sm-4 d-flex justify-content-center animate__animated animate__fadeInUp">DISCOVER<i
-                                class="bi bi-arrow-right ms-2 heroBtnArrow"></i></button>
-                    </div>
-                    <div class="col-lg-6 text-lg-end text-sm-center p-0 m-0 animate__animated animate__fadeIn animate__slower">
-                        <img class="img-fluid heroImage" src="images/hero-image.jpg" alt="Woman smiling while holding a container with facial cream">
-                    </div>
+            <div class="row heroContainer px-0 mx-0 pt-lg-0 pt-sm-5">
+                <div class="col-lg-6 col-md-12 text-lg-start text-md-center ps-lg-5 contentContainer">
+                    <h1 class="heroHeading animate__animated animate__fadeInUp">Healthy skin is beautiful skin</h1>
+                    <p class="heroText py-4 animate__animated animate__fadeInUp">We enhance your skin's beauty and
+                        nurture its natural radiance by providing attentive care and high-quality products.</p>
+                    <a href="#treatments">
+                        <button
+                            class="heroBtn col-lg-4 col-sm-4 d-flex justify-content-center animate__animated animate__fadeInUp">DISCOVER<i
+                                class="bi bi-arrow-right ms-2 heroBtnArrow"></i></button></a>
                 </div>
+                <div
+                    class="col-lg-6 text-lg-end text-sm-center p-0 m-0 animate__animated animate__fadeIn animate__slower">
+                    <img class="img-fluid heroImage" src="images/hero-image.jpg"
+                        alt="Woman smiling while holding a container with facial cream">
+                </div>
+            </div>
         </section>
 
         <!-- treatments section -->
-        <section class="container mx-auto treatmentsSection">
+        <section class="container mx-auto treatmentsSection" id="treatments">
             <div class="treatmentsHeadingContaniner px-lg-5">
                 <h2 class="treatmentsHeading">TREATMENTS</h2>
             </div>
@@ -108,7 +112,8 @@
             <div class="row stepsContainer">
                 <div class="row pb-lg-5 pb-md-2 ps-5 stepContent">
                     <div data-aos="fade-right" class="col-lg-6 col-md-12">
-                        <img class="img-fluid stepsImage" src="images/consultation.webp" alt="A clinic assistant talking to a client and taking notes.">
+                        <img class="img-fluid stepsImage" src="images/consultation.webp"
+                            alt="A clinic assistant talking to a client and taking notes.">
                     </div>
                     <div data-aos="fade-left" class="col-lg-6 col-md-12 texContainer">
                         <h3 class="step pb-2 py-4"> CONSULTATION</h3>
@@ -121,7 +126,8 @@
                 </div>
                 <div class="row pt-lg-5 pb-lg-5 pt-md-2 pb-md-2 ps-5 stepContent">
                     <div data-aos="fade-right" class="col-lg-6 col-md-12">
-                        <img class="img-fluid stepsImage" src="images/treatment.jpg" alt="face of a smiling woman who is lying on a table receiving a facial cosmetology treatment">
+                        <img class="img-fluid stepsImage" src="images/treatment.jpg"
+                            alt="face of a smiling woman who is lying on a table receiving a facial cosmetology treatment">
                     </div>
                     <div data-aos="fade-left" class="col-lg-6 col-md-12 texContainer">
                         <h3 class="step pb-2 py-4"> TREATMENT</h3>
@@ -151,9 +157,9 @@
     <!-- appointment section-->
     <section>
         <div class="container-fluid appointmentContainer m-0 text-center">
-            <p class="appointmentHeading">Make an appointment</p>
+            <h3 class="appointmentHeading">Make an appointment</h3>
             <p class="textHeading my-3">Our team awaits you in our clinic to give you the treatment you deserve.</p>
-            <button class="appointmentButton py-1 px-5 mt-3">Schedule <i class="bi bi-arrow-right ms-2 m-0"></i></button>
+            <button class="appointmentButton py-1 px-5 mt-3">Schedule</button>
         </div>
     </section>
 
@@ -163,15 +169,15 @@
             <hr class="w-100 clearfix d-md-none" />
             <!-- contact-->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <p class="mb-4 footerHeading">CONTACT</p>
-                <p> <i class="bi bi-house-door-fill"></i> Andes 1256, Montevideo, UY</p>
-                <p> <i class="bi bi-envelope-fill"></i> info@dalvaskin.com</p>
-                <p> <i class="bi bi-telephone-fill"></i>+ 598 91001259</p>
+                <p class="mb-4 bold">CONTACT</p>
+                <p> <i class="fa-solid fa-house"></i> Andes 1256, Montevideo, UY</p>
+                <p> <i class="fa-solid fa-envelope"></i> info@dalvaskin.com</p>
+                <p> <i class="fa-solid fa-phone"></i> + 598 91001259</p>
             </div>
 
             <!-- opening hours-->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <p class="mb-4 footerHeading">OPENING HOURS</p>
+                <p class="mb-4 bold">OPENING HOURS</p>
                 <p class="day mb-0">Mon - Fri</p>
                 <p class="hour">8am - 7pm</p>
                 <p class="day  mb-0">Saturday</p>
@@ -182,19 +188,12 @@
 
             <!-- social media-->
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 pb-4">
-                <p class="mb-4 footerHeading">FOLLOW US</p>
-                <!-- Facebook -->
-                <a class="socialMedia" href="#">
-                    <i class="bi bi-facebook"></i>
-                </a>
-                <!-- Instagram -->
-                <a class="socialMedia" href="#">
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <!-- Youtube -->
-                <a class="socialMedia" href="#">
-                    <i class="bi bi-youtube"></i>
-                </a>
+                <p class="mb-4 bold">FOLLOW US</p>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
             <hr class="w-100 clearfix d-md-none" />
         </div>

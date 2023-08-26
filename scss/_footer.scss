@@ -1,9 +1,14 @@
 footer {
     background-color: $color-secondary;
-    font-family: $font-lato;
+    font-family: $font-montserrat;
+
+    .fa-solid {
+        color: black;
+        padding-right: 0.5rem;
+    }
 
     //footer heading
-    .footerHeading {
+    .bold {
         font-size: $font-size-small;
         font-weight: 600;
     }
@@ -20,28 +25,21 @@ footer {
     }
 
     //enlaces de redes sociales
-    .socialMedia {
-        text-decoration: none;
-        padding-right: $spacing-sm;
-        color: $color-primary;
-        font-size: $font-size-medium;
-    }
+    .social-container {
+        margin: 1rem 0;
 
-    //facebook
-    .bi-facebook {
-        color: $color-blue; // Asegúrate de tener una variable $color-blue definida
-    }
-
-    //instagram
-    .bi-instagram {
-        color: $color-violet;
-    }
-
-    //youtube
-    .bi-youtube {
-        color: $color-red; // Asegúrate de tener una variable $color-red definida
-    }
-    .rights{
-        font-family: $font-lato;
+        a {
+            border: none;
+            background-color: $color-primary;
+            color: $color-white;
+            text-decoration: none;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.3rem;
+            height: 2.5rem;
+            width: 2.5rem;
+        }
     }
 }

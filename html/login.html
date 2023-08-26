@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Get to know our team of professional cosmetologists who will help and accompany you at every step.">
+        content="Transform Your Beauty: Discover Expert Cosmetology Services at Our Clinic - Unveil Your Radiance Today!">
     <meta name="keywords" content=" SKINCARE, BEAUTY, ANTI-AGING,TREATMENT,HEALTH">
-    <title>Dalva Skin | About us | Unveiling Our Passion for Beauty and Care</title>
-    <link rel="shortcut icon" href="../images/dalva-favicon.png" type="image/x-icon">
+    <title>Dalva Skin | Home</title>
+    <link rel="shortcut icon" href="./images/dalva-favicon.png" type="image/x-icon">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- font awesome -->
+    <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/4f35de3737.js" crossorigin="anonymous"></script>
     <!-- animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -31,22 +33,22 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <nav class="collapse navbar-collapse" id="navbarNav">
+            <nav class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item ">
                         <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="blog.html">Blog</a>
+                        <a class="nav-link" href="../html/blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html">About us</a>
+                        <a class="nav-link" href="../html/aboutus.html">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="faqs.html">FAQs</a>
+                        <a class="nav-link" href="../html/faqs.html">FAQs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="../html/contact.html">Contact</a>
                     </li>
                 </ul>
                 <a class="pt-1" href="./login.html">
@@ -56,40 +58,23 @@
         </div>
     </header>
 
-    <main class="container ps-lg-5 pb-5 mx-auto px-auto">
-        <div class="text-center aboutHeadingContainer my-5 animate__animated animate__fadeInDown">
-            <h1 class="aboutHeading">MEET OUR TEAM</h1>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-12 aboutContent mx-auto">
-                <h2 class="animate__animated animate__fadeInLeft animate__fast"> A profesional team</h2>
-                <hr>
-                <p class="pb-4 aboutText animate__animated animate__fadeInLeft">We are professionals highly committed to
-                    providing comprehensive beauty,
-                    health
-                    and wellness
-                    care. We have a team of experts in the field of medical aesthetics, who strive to offer
-                    exceptional quality service and products, always demonstrating our professionalism and warm
-                    attention to you.
-                </p>
-                <h2 class="animate__animated animate__fadeInLeft animate__fast"> We care</h2>
-                <hr>
-                <p class="pb-sm-5 aboutText animate__animated animate__fadeInLeft">Our customers are our top priority,
-                    which is why we make sure to offer you
-                    high-quality
-                    products
-                    and use cutting-edge technology. Our goal is to exceed your expectations by providing you
-                    with
-                    exceptional results and ensuring your satisfaction at every stage of the process.
-                </p>
-            </div>
-            <div class="col-lg-6 col-md-12 imgDiv pb-5 animate__animated animate__fadeInRight">
-                <figure class="row imgContainer">
-                    <img class="img-fluid mx-auto" src="../images/dra-alvarez.jpg"
-                        alt="Image of Dr. Debora Alvarez, owner of Dalva Skin">
-                    <figcaption class="text-center pt-md-2"> Dra. Debora Álvarez</figcaption>
-                </figure>
-            </div>
+    <!-- log in form -->
+    <main class="formSection">
+        <div class="formContainer">
+            <form class="signInForm">
+                <h1 class="signInHeading animate__animated animate__fadeInDown">Sign in</h1>
+                <div class="social-container animate__animated animate__fadeInDown">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="animate__animated animate__fadeInDown">or use your account</p>
+                <input type="email" placeholder="Email" class=" animate__animated animate__fadeInDown" />
+                <input type="password" placeholder="Password" class=" animate__animated animate__fadeInDown" />
+                <a href="#" class="animate__animated animate__fadeInDown">Forgot your password?</a>
+                <button class="signButton animate__animated animate__fadeInDown ">SIGN IN</button>
+                <a href="#" class="animate__animated animate__fadeInDown">New here? <span>Resgister</span></a>
+            </form>
         </div>
     </main>
 
@@ -137,6 +122,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
