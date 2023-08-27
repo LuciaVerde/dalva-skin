@@ -169,13 +169,6 @@ footer .social-container a {
     padding: 0.7rem 5rem;
   }
 }
-.heroSection .heroContainer .contentContainer a .heroBtn .heroBtnArrow {
-  font-size: 1.5rem;
-}
-.heroSection .heroContainer .contentContainer a .heroBtn:hover {
-  background-color: rgb(204, 106, 51);
-  color: #fff;
-}
 .heroSection .heroContainer .heroImage {
   border-bottom-left-radius: 45rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -202,17 +195,16 @@ footer .social-container a {
 
 .contactMain {
   background-color: rgba(255, 208, 182, 0.19);
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
   padding: 0;
   border-radius: 1rem;
   max-height: 40rem;
 }
-.contactMain .imgFormContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contactMain .imgFormContainer img {
+  height: 100%;
+  width: 100%;
 }
 .contactMain .contactHeading {
   color: rgb(204, 106, 51);
@@ -222,7 +214,7 @@ footer .social-container a {
 }
 @media (max-width: 1200px) {
   .contactMain .contactHeading {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 @media (max-width: 992px) {
@@ -243,12 +235,12 @@ footer .social-container a {
 }
 @media (max-width: 1200px) {
   .contactMain .contactText {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 992px) {
   .contactMain .contactText {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 .contactMain ::placeholder {
@@ -281,10 +273,10 @@ footer .social-container a {
   border-bottom: 0.1rem solid gray;
   background-color: transparent;
 }
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
   .contactMain input,
   .contactMain .area {
-    padding: 2rem;
+    padding: 1.5rem;
   }
 }
 .contactMain .btnContainer {
@@ -326,28 +318,31 @@ footer .social-container a {
   }
 }
 
-.blogHeading {
+.mainBlog {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.mainBlog .blogHeading {
   font-family: "Italiana", serif;
   font-size: 5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 768px) {
-  .blogHeading {
+  .mainBlog .blogHeading {
     font-size: 4.4rem;
   }
 }
 @media (max-width: 576px) {
-  .blogHeading {
+  .mainBlog .blogHeading {
     font-size: 4rem;
     padding-left: 0;
     padding-right: 0;
   }
 }
-
-.cardsContainer {
+.mainBlog .cardsContainer {
   padding-bottom: 4rem;
 }
-.cardsContainer .blogCard {
+.mainBlog .cardsContainer .blogCard {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,43 +359,43 @@ footer .social-container a {
   transition: transform 0.3s;
   animation-fill-mode: backwards;
 }
-.cardsContainer .blogCard:hover {
+.mainBlog .cardsContainer .blogCard:hover {
   transform: scale(1.05);
 }
-.cardsContainer .blogCard.cardOne {
+.mainBlog .cardsContainer .blogCard.cardOne {
   background-image: url(../images/blog-one.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.cardsContainer .blogCard.cardTwo {
+.mainBlog .cardsContainer .blogCard.cardTwo {
   background-image: url(../images/blog-two.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.cardsContainer .blogCard.cardThree {
+.mainBlog .cardsContainer .blogCard.cardThree {
   background-image: url(../images/blog-three.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.cardsContainer .blogCard .column-content {
+.mainBlog .cardsContainer .blogCard .column-content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
 }
-.cardsContainer .blogCard .cardHeading {
+.mainBlog .cardsContainer .blogCard .cardHeading {
   font-size: 2.5rem;
   font-family: "Italiana", serif;
   font-weight: 600;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.cardsContainer .blogCard .cardText {
+.mainBlog .cardsContainer .blogCard .cardText {
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.cardsContainer .blogCard .readBtn {
+.mainBlog .cardsContainer .blogCard .readBtn {
   font-family: "Montserrat", sans-serif;
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.258);
@@ -412,30 +407,30 @@ footer .social-container a {
   font-weight: 400;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.cardsContainer .blogCard .readBtn:hover {
+.mainBlog .cardsContainer .blogCard .readBtn:hover {
   background-color: white;
   color: black;
 }
 @media (max-width: 1400px) {
-  .cardsContainer .blogCard {
+  .mainBlog .cardsContainer .blogCard {
     margin-bottom: 2rem;
   }
 }
 @media (max-width: 992px) {
-  .cardsContainer .mainBlog {
+  .mainBlog .cardsContainer .mainBlog {
     padding-bottom: 3rem;
   }
 }
 @media (max-width: 768px) {
-  .cardsContainer .blogHeading {
+  .mainBlog .cardsContainer .blogHeading {
     font-size: 4.4rem;
   }
 }
 @media (max-width: 576px) {
-  .cardsContainer .blogHeading {
+  .mainBlog .cardsContainer .blogHeading {
     font-size: 4rem;
   }
-  .cardsContainer .cardContainer {
+  .mainBlog .cardsContainer .cardContainer {
     padding-top: 3rem;
   }
 }

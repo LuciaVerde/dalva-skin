@@ -66,6 +66,7 @@
 
             a {
                 text-decoration: none;
+                
 
                 .heroBtn {
                     @include flex-center-center;
@@ -91,14 +92,6 @@
                         padding: 0.7rem 5rem;
                     }
 
-                    .heroBtnArrow {
-                        font-size: $font-size-medium;
-                    }
-
-                    &:hover {
-                        background-color: $color-primary;
-                        color: #fff;
-                    }
                 }
 
             }

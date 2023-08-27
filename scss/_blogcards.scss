@@ -1,116 +1,121 @@
-.blogHeading {
-    @include headings-h1;
+.mainBlog {
+    margin-top: $spacing-xxl;
+    margin-bottom: $spacing-lg;
 
-    @media (max-width: 768px) {
-        @include media-768-headings-h1;
+    .blogHeading {
+        @include headings-h1;
+
+        @media (max-width: 768px) {
+            @include media-768-headings-h1;
+        }
+
+        @media (max-width: 576px) {
+            @include media-576-headings-h1;
+        }
     }
 
-    @media (max-width: 576px) {
-        @include media-576-headings-h1;
-    }
-}
-
-.cardsContainer {
-    padding-bottom: $spacing-xl;
+    .cardsContainer {
+        padding-bottom: $spacing-xl;
 
 
-    .blogCard {
-        @include flex-center-center;
-        @include cover-no-repeat;
-        background-position: center center;
-        flex-direction: column;
-        color: white;
-        padding: $spacing-md;
-        height: 35rem;
-        width: 25rem;
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-        border-radius: 0.3rem;
-        transition: transform 0.3s;
-        animation-fill-mode: backwards;
-
-        &:hover {
-            transform: scale(1.05);
-        }
-
-        &.cardOne {
-            background-image: url(../images/blog-one.jpg);
-            @include cover-no-repeat;
-        }
-
-        &.cardTwo {
-            background-image: url(../images/blog-two.jpg);
-            @include cover-no-repeat;
-        }
-
-        &.cardThree {
-            background-image: url(../images/blog-three.jpg);
-            @include cover-no-repeat;
-        }
-
-        .column-content {
+        .blogCard {
             @include flex-center-center;
+            @include cover-no-repeat;
+            background-position: center center;
             flex-direction: column;
-            text-align: center;
-        }
-
-        .cardHeading {
-            font-size: 2.5rem;
-            font-family: $font-italiana;
-            font-weight: 600;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .cardText {
-            font-size: $font-size-small;
-            font-family: $font-montserrat;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
-        }
-
-        .readBtn {
-            font-family: $font-montserrat;
-            border: 1px solid $color-white;
-            background-color: rgba(255, 255, 255, 0.258);
-            color: $color-white;
-            padding: 0.2rem $spacing-lg;
-            font-size: 1.2rem;
-            border-radius: 0;
-            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            font-weight: 400;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: $spacing-md;
+            height: 35rem;
+            width: 25rem;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 0.3rem;
+            transition: transform 0.3s;
+            animation-fill-mode: backwards;
 
             &:hover {
-                background-color: $color-white;
-                color: $color-black;
+                transform: scale(1.05);
+            }
+
+            &.cardOne {
+                background-image: url(../images/blog-one.jpg);
+                @include cover-no-repeat;
+            }
+
+            &.cardTwo {
+                background-image: url(../images/blog-two.jpg);
+                @include cover-no-repeat;
+            }
+
+            &.cardThree {
+                background-image: url(../images/blog-three.jpg);
+                @include cover-no-repeat;
+            }
+
+            .column-content {
+                @include flex-center-center;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cardHeading {
+                font-size: 2.5rem;
+                font-family: $font-italiana;
+                font-weight: 600;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+
+            .cardText {
+                font-size: $font-size-small;
+                font-family: $font-montserrat;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+            }
+
+            .readBtn {
+                font-family: $font-montserrat;
+                border: 1px solid $color-white;
+                background-color: rgba(255, 255, 255, 0.258);
+                color: $color-white;
+                padding: 0.2rem $spacing-lg;
+                font-size: 1.2rem;
+                border-radius: 0;
+                box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                font-weight: 400;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+                &:hover {
+                    background-color: $color-white;
+                    color: $color-black;
+                }
             }
         }
-    }
 
-    @media (max-width: 1400px) {
-        .blogCard {
-            margin-bottom: $spacing-md;
-        }
-    }
-
-    @media (max-width: 992px) {
-        .mainBlog {
-            padding-bottom: $spacing-lg;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .blogHeading {
-            font-size: 4.4rem;
-        }
-    }
-
-    @media (max-width: 576px) {
-        .blogHeading {
-            font-size: $font-size-xxlarge;
+        @media (max-width: 1400px) {
+            .blogCard {
+                margin-bottom: $spacing-md;
+            }
         }
 
-        .cardContainer {
-            padding-top: $spacing-lg;
+        @media (max-width: 992px) {
+            .mainBlog {
+                padding-bottom: $spacing-lg;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blogHeading {
+                font-size: 4.4rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .blogHeading {
+                font-size: $font-size-xxlarge;
+            }
+
+            .cardContainer {
+                padding-top: $spacing-lg;
+            }
         }
     }
 }

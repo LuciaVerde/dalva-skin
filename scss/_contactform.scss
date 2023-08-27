@@ -1,14 +1,18 @@
 .contactMain {
     background-color: $color-secondary;
-    margin-top: $spacing-xxl;
-    margin-bottom: $spacing-xxl;
+    margin-top: $spacing-xxxl;
+    margin-bottom: $spacing-xxxl;
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
     padding: 0;
     border-radius: 1rem;
     max-height: 40rem;
 
     .imgFormContainer {
-        @include flex-center-center;
+        
+        img{
+            height:100%;
+            width: 100%;
+        }
     }
 
     .contactHeading {
@@ -18,11 +22,11 @@
         font-weight: 600;
 
         @media (max-width: 1200px) {
-            font-size: $font-size-xxxlarge;
+            font-size: $font-size-xxlarge;
         }
 
         @media (max-width: 992px) {
-            font-size: $spacing-xl;
+            font-size: $font-size-xxlarge;
         }
 
         @media (max-width: 576px) {
@@ -37,11 +41,11 @@
         color: $color-gray;
 
         @media (max-width: 1200px) {
-            font-size: $font-size-medium;
+            font-size: 1.3rem;
         }
 
         @media (max-width: 992px) {
-            font-size: $font-size-medium;
+            font-size: 1.3rem;
         }
     }
 
@@ -74,9 +78,9 @@
         border-right: 0;
         border-bottom: 0.1rem solid $color-gray;
         background-color: transparent;
-
-        @media (max-width: 576px) {
-            padding: $spacing-md;
+        
+        @media (max-width: 1200px) {
+            padding: $spacing-sm;
         }
     }
 
