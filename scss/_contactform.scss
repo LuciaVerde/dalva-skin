@@ -8,9 +8,9 @@
     max-height: 40rem;
 
     .imgFormContainer {
-        
-        img{
-            height:100%;
+
+        img {
+            height: 100%;
             width: 100%;
         }
     }
@@ -78,7 +78,7 @@
         border-right: 0;
         border-bottom: 0.1rem solid $color-gray;
         background-color: transparent;
-        
+
         @media (max-width: 1200px) {
             padding: $spacing-sm;
         }

@@ -1,98 +1,95 @@
-body {
+.formSection {
+    @include flex-center-center;
+    @include cover-no-repeat;
+    background-image: url(../images/appointment-img-blur.jpg);
+    background-position: center;
+    flex-direction: column;
+    font-family: $font-montserrat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 
-    .formSection {
-        @include flex-center-center;
-        @include cover-no-repeat;
-        background-image: url(../images/appointment-img-blur.jpg);
-        background-position: center;
-        flex-direction: column;
-        font-family: $font-montserrat;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
+    .formContainer {
+        background-color: $color-white;
+        border-radius: 0.625rem;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+        width: 30rem;
+        max-width: 100%;
+        min-height: 35rem;
 
-        .formContainer {
+        .signInForm {
+            @include flex-center-center;
             background-color: $color-white;
-            border-radius: 0.625rem;
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-                0 10px 10px rgba(0, 0, 0, 0.22);
-            width: 30rem;
-            max-width: 100%;
-            min-height: 35rem;
+            flex-direction: column;
+            padding: 0 3.125rem;
+            height: 100%;
+            text-align: center;
+            border-radius: 5rem;
 
-            .signInForm {
-                @include flex-center-center;
-                background-color: $color-white;
-                flex-direction: column;
-                padding: 0 3.125rem;
-                height: 100%;
-                text-align: center;
-                border-radius: 5rem;
+            .signInHeading {
+                font-family: $font-italiana;
+                font-weight: bold;
+                margin: 0;
+                color: $color-primary;
+                font-size: $font-size-xlarge;
+            }
 
-                .signInHeading {
-                    font-family: $font-italiana;
-                    font-weight: bold;
-                    margin: 0;
-                    color: $color-primary;
-                    font-size: $font-size-xlarge;
-                }
-
-                .social-container {
-                    margin: 1.25rem 0;
-
-                    a {
-                        border: 1px solid #DDDDDD;
-                        border-radius: 50%;
-                        display: inline-flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin: 0 0.313rem;
-                        height: 2.5rem;
-                        width: 2.5rem;
-                        transition: transform 0.3s;
-
-                        &:hover {
-                            transform: scale(1.1);
-                        }
-                    }
-                }
-
-                input {
-                    background-color: #eee;
-                    border: none;
-                    padding: 0.75rem 0.938rem;
-                    margin: 0.5rem 0;
-                    width: 100%;
-                }
+            .social-container {
+                margin: 1.25rem 0;
 
                 a {
-                    color: #333;
-                    font-size: 1rem;
-                    text-decoration: none;
-                    margin: 0.938rem 0;
-
-                    span {
-                        color: $color-primary;
-                        text-decoration: underline $color-primary;
-                    }
-                }
-
-                .signButton {
-                    border-radius: 2rem;
-                    border: 0.1rem solid $color-primary;
-                    background-color: $color-primary;
-                    color: $color-white;
-                    font-size: 0.8rem;
-                    font-weight: bold;
-                    padding: 0.75rem 2.813rem;
-                    letter-spacing: 0.1rem;
-                    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 50%;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 0.313rem;
+                    height: 2.5rem;
+                    width: 2.5rem;
+                    transition: transform 0.3s;
 
                     &:hover {
-                        background-color: $color-white;
-                        color: $color-primary;
-                        border-color: $color-primary;
+                        transform: scale(1.1);
                     }
+                }
+            }
+
+            input {
+                background-color: #eee;
+                border: none;
+                padding: 0.75rem 0.938rem;
+                margin: 0.5rem 0;
+                width: 100%;
+            }
+
+            a {
+                color: #333;
+                font-size: 1rem;
+                text-decoration: none;
+                margin: 0.938rem 0;
+
+                span {
+                    color: $color-primary;
+                    text-decoration: underline $color-primary;
+                }
+            }
+
+            .signButton {
+                border-radius: 2rem;
+                border: 0.1rem solid $color-primary;
+                background-color: $color-primary;
+                color: $color-white;
+                font-size: 0.8rem;
+                font-weight: bold;
+                padding: 0.75rem 2.813rem;
+                letter-spacing: 0.1rem;
+                transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: $color-white;
+                    color: $color-primary;
+                    border-color: $color-primary;
                 }
             }
         }
